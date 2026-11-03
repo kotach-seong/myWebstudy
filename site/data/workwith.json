@@ -1,0 +1,82 @@
+{
+  "row1": [
+    {
+      "name": "C#",
+      "image": "images/tech-stack/row1-1.svg"
+    },
+    {
+      "name": "C++",
+      "image": "images/tech-stack/row1-2.svg"
+    },
+    {
+      "name": "C",
+      "image": "images/tech-stack/row1-3.svg"
+    },
+    {
+      "name": "Python",
+      "image": "images/tech-stack/row1-4.svg"
+    },
+    {
+      "name": "Java",
+      "image": "images/tech-stack/row1-5.svg"
+    },
+    {
+      "name": "CSS",
+      "image": "images/tech-stack/row1-6.svg"
+    },
+    {
+      "name": "HTML",
+      "image": "images/tech-stack/row1-7.svg"
+    },
+    {
+      "name": "Linux",
+      "image": "images/tech-stack/row1-8.svg"
+    },
+    {
+      "name": "JavaScript",
+      "image": "images/tech-stack/row1-9.svg"
+    },
+    {
+      "name": "SQL",
+      "image": "images/tech-stack/row1-10.svg"
+    }
+  ],
+  "row2": [
+    {
+      "name": "Unity",
+      "image": "images/tech-stack/row2-1.svg"
+    },
+    {
+      "name": "Unreal",
+      "image": "images/tech-stack/row2-2.svg"
+    },
+    {
+      "name": "Claude",
+      "image": "images/tech-stack/row2-3.svg"
+    },
+    {
+      "name": "ChatGPT",
+      "image": "images/tech-stack/row2-4.svg"
+    },
+    {
+      "name": "Gemini",
+      "image": "images/tech-stack/row2-5.svg"
+    },
+    {
+      "name": "Tripo",
+      "image": "images/tech-stack/row2-6.svg"
+    },
+    {
+      "name": "Suno",
+      "image": "images/tech-stack/row2-7.svg"
+    },
+    {
+      "name": "Grok",
+      "image": "images/tech-stack/row2-8.svg"
+    },
+    {
+      "name": "CUDA",
+      "image": "images/tech-stack/row2-9.svg"
+    }
+  ]
+}

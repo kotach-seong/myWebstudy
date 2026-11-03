@@ -1,0 +1,57 @@
+{{ with hugo.Data.workwith }}
+<section class="work-with mb-20" aria-labelledby="work-with-title">
+  <h2 id="work-with-title" class="text-4xl font-bold mb-2 relative">What I work with</h2>
+  <div class="work-with__rows">
+    {{ range $rowIndex, $items := slice .row1 .row2 }}
+    <div class="work-with__window" role="group" aria-label="{{ if eq $rowIndex 0 }}Languages and platforms{{ else }}AI tools and engines{{ end }}">
+      <div class="work-with__track {{ if eq $rowIndex 0 }}work-with__track--right{{ else }}work-with__track--left{{ end }}">
+        {{ range $copy := seq 2 }}
+        <ul class="work-with__group"{{ if eq $copy 2 }} aria-hidden="true"{{ end }}>
+          {{ range $items }}
+          <li class="work-with__item">
+            <img class="work-with__icon" src="{{ .image | relURL }}" alt="" width="40" height="40">
+            <span>{{ .name }}</span>
+          </li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+<style>
+.work-with { min-width: 0; }
+.work-with__rows { padding-top: 1rem; }
+.work-with__window {
+  width: 100%; overflow: hidden; padding-block: .75rem;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+.work-with__track { display: flex; width: max-content; will-change: transform; }
+.work-with__group {
+  display: flex; flex: 0 0 auto; align-items: center; gap: 2rem;
+  list-style: none; margin: 0; padding: 0 2rem 0 0;
+}
+.work-with__item { display: flex; flex: 0 0 auto; align-items: center; gap: .65rem; white-space: nowrap; }
+.work-with__item span { font-size: 1.25rem; font-weight: 500; line-height: 1.5; }
+.work-with__icon { display: block; flex: 0 0 40px; width: 40px; height: 40px; object-fit: contain; filter: brightness(0); }
+.dark .work-with__icon { filter: brightness(0) invert(1); }
+.work-with__track--right { animation: work-with-right 45s linear infinite; }
+.work-with__track--left { animation: work-with-left 45s linear infinite; }
+.work-with__window:hover .work-with__track { animation-play-state: paused; }
+@keyframes work-with-right { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+@keyframes work-with-left { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (max-width: 640px) {
+  .work-with__group { gap: 1.5rem; padding-right: 1.5rem; }
+  .work-with__icon { flex-basis: 32px; width: 32px; height: 32px; }
+  .work-with__item span { font-size: 1.125rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .work-with__track { animation: none; transform: none; will-change: auto; width: 100%; }
+  .work-with__window { overflow: visible; -webkit-mask-image: none; mask-image: none; }
+  .work-with__group { flex: 1 1 auto; flex-wrap: wrap; padding-right: 0; }
+  .work-with__group[aria-hidden="true"] { display: none; }
+}
+</style>
+{{ end }}

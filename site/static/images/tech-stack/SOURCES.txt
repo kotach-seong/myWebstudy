@@ -1,0 +1,20 @@
+Devicon (MIT), Lobe Icons (MIT), Simple Icons (CC0).
+C#: https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-plain.svg
+C++: https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-plain.svg
+C: https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg
+Python: https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-plain.svg
+Java: https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-plain.svg
+CSS: https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain.svg
+HTML: https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-plain.svg
+Linux: https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-plain.svg
+JavaScript: https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg
+SQL: https://raw.githubusercontent.com/devicons/devicon/master/icons/azuresqldatabase/azuresqldatabase-plain.svg
+Unity: https://raw.githubusercontent.com/devicons/devicon/master/icons/unity/unity-original.svg
+Unreal: https://raw.githubusercontent.com/devicons/devicon/master/icons/unrealengine/unrealengine-original.svg
+Claude: https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-svg/icons/claude.svg
+ChatGPT: https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-svg/icons/openai.svg
+Gemini: https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-svg/icons/gemini.svg
+Tripo: https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-svg/icons/tripo.svg
+Suno: https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-svg/icons/suno.svg
+Grok: https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-svg/icons/grok.svg
+CUDA: https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/nvidia.svg
