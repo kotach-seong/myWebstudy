@@ -1,6 +1,6 @@
 baseURL = "https://johndoe.dev"
 locale = 'en-us'
-title = 'John Doe'
+title = 'Project Website'
 
 
 # URL handling
@@ -13,11 +13,11 @@ canonifyURLs = true
   tag = "tags"
 
 [params]
-name = "John Doe"
-location = "Anytown, USA"
-description = "AI Developer. ML Engineer. I finetune models, build scalable pipelines and automate workflows."
-discord = "johndoe123"
-github = "https://github.com/johndoe123"
+name = "Oh Seong Jun"
+location = "NamWon, Republic of Korea"
+description = "AI Developer. Game Developer. student at JBNU. "
+discord = "https://discord.com/users/425610371508731914"
+github = "https://github.com/kotach-seong"
 github_username = "johndoe123"
 email = "johndoe@example.com"
 twitter = "https://www.twitter.com/johndoe123"
