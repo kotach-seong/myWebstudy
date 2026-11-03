@@ -1,0 +1,11 @@
+{{- $page := . -}}
+{{- range hugo.Sites -}}
+  {{- $target := .Home -}}
+  {{- $found := where $page.AllTranslations "Language.Lang" .Language.Lang -}}
+  {{- if $found -}}{{- $target = index $found 0 -}}{{- end -}}
+  <a href="{{ $target.RelPermalink }}" hreflang="{{ .Language.Lang }}" lang="{{ .Language.Lang }}" data-language-link
+     {{ if eq .Language.Lang $page.Language.Lang }}aria-current="page"{{ end }}
+     class="{{ if eq .Language.Lang $page.Language.Lang }}language-active{{ end }} text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300">
+    {{ .Params.languageLabel }} · {{ .Language.Label }}
+  </a>
+{{- end -}}

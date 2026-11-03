@@ -1,9 +1,9 @@
 {{ with hugo.Data.workwith }}
 <section class="work-with mb-20" aria-labelledby="work-with-title">
-  <h2 id="work-with-title" class="text-4xl font-bold mb-2 relative">What I work with</h2>
+  <h2 id="work-with-title" class="text-4xl font-bold mb-2 relative">{{ T "whatIWorkWith" }}</h2>
   <div class="work-with__rows">
     {{ range $rowIndex, $items := slice .row1 .row2 }}
-    <div class="work-with__window" role="group" aria-label="{{ if eq $rowIndex 0 }}Languages and platforms{{ else }}AI tools and engines{{ end }}">
+    <div class="work-with__window" role="group" aria-label="{{ if eq $rowIndex 0 }}{{ T "languagesPlatforms" }}{{ else }}{{ T "aiToolsEngines" }}{{ end }}">
       <div class="work-with__track {{ if eq $rowIndex 0 }}work-with__track--right{{ else }}work-with__track--left{{ end }}">
         {{ range $copy := seq 2 }}
         <ul class="work-with__group"{{ if eq $copy 2 }} aria-hidden="true"{{ end }}>

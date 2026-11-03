@@ -1,0 +1,5 @@
+{{- if hasPrefix .URL "#" -}}
+    {{- printf "%s%s" site.Home.RelPermalink .URL -}}
+{{- else -}}
+    {{- .URL | absURL -}}
+{{- end -}}

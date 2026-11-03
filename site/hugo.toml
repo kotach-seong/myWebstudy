@@ -1,5 +1,7 @@
 baseURL = "https://johndoe.dev"
 locale = 'en-us'
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
 title = 'Project Website'
 
 
@@ -19,12 +21,12 @@ description = "AI Developer. Game Developer. student at JBNU. "
 discord = "https://discord.com/users/425610371508731914"
 github = "https://github.com/kotach-seong"
 github_username = "johndoe123"
-email = "johndoe@example.com"
+email = "booc456@jbnu.ac.kr"
 twitter = "https://www.twitter.com/johndoe123"
 twitter_username = "johndoe123"
 medium = "https://www.medium.com/@johndoe123"
-linkedin = "https://www.linkedin.com/in/johndoe123"
-linkedin_username = "johndoe123"
+steam = "https://steamcommunity.com/profiles/76561199021434695/" # Add your Steam profile URL here
+steam_username = "Hubert"
 instagram = "https://instagram.com/johndoe123"
 leetcode = "https://leetcode.com/johndoe123"
 leetcode_username = "johndoe123"
@@ -56,31 +58,27 @@ kaggle_username = "johndoe123"
   ]
 
 [[params.honors]]
-institution = "Generic College"
-title = "Academic Topper"
-date = "March 2023"
+institution = "likelion bootcamp"
+title = "likelion hackathon"
+date = "March 2026"
 
 [[params.honors]]
-institution = "Valley High Academy"
-title = "Outstanding Achievement in STEM"
-date = "May 2018"
+institution = "who kathon"
+title = "who hackathon"
+date = "November 2025"
 
 [[params.certifications]]
-title = "Azure AI Engineering Specialist"
-date = "Dec 2024"
-url = "https://example.com/cert-azure"
+title = "Craftsman Information Processing"
+date = "Dec 2023"
 
 [[params.certifications]]
-title = "Google Cloud ML Professional"
-date = "March 2024" 
-url = "https://example.com/cert-gcp"
+title = "Craftsman Automobile Repair Painting"
+date = "March 2022"
 
 [[params.experience]]
-company = "Lorem Technologies"
-role = "AI Research Engineer"
-period = "Jan 2023 - Dec 2023"
-logo = "/images/company/lorem.png"
-description = "Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore."
+role = "MAKGAN"
+period = "March 2026 - March 2026"
+description = "Developed an app that shows wait times at nearby restaurants, hospitals, and other facilities to help users reduce waiting time."
 responsibilities = [
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     "Ut enim ad minim veniam, quis nostrud exercitation",
@@ -89,11 +87,9 @@ responsibilities = [
 ]
 
 [[params.experience]]
-company = "Ipsum Solutions"
-role = "Machine Learning Engineer"
-period = "Jun 2022 - Dec 2022"
-logo = "/images/company/ipsum.png"
-description = "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+role = "2D Dungeon cleaner"
+period = "March 2026 - present"
+description = "A game where you clean up dungeons after adventurers have passed through, collect treasure, defeat remaining enemies, and grow stronger along the way."
 responsibilities = [
     "Sed ut perspiciatis unde omnis iste natus error",
     "Nemo enim ipsam voluptatem quia voluptas sit",
@@ -102,11 +98,9 @@ responsibilities = [
 ]
 
 [[params.experience]]
-company = "Dolor Analytics"
-role = "Data Scientist"
-period = "Jan 2022 - May 2022"
-logo = "/images/company/dolor.png"
-description = "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit."
+role = "DDuck dating sim"
+period = "October 2026 - present"
+description = "A game where you run a rice cake shop, earn money, and use your earnings to go on dates with female characters."
 responsibilities = [
     "Nam libero tempore, cum soluta nobis est eligendi",
     "Temporibus autem quibusdam et aut officiis debitis",
@@ -114,85 +108,27 @@ responsibilities = [
 ]
 
 [[params.experience]]
-company = "Sit Amet Corp"
-role = "Open Source Contributor"
-period = "2021 - Present"
-description = "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse."
+role = "Space Janitors"
+period = "April 2026 - Present"
+description = "A game where you clean up wrecked spaceships, defeat enemies, and clear debris from space."
 github_username = "loremipsum"
 
 [[params.projects]]
-title = "Project Consectetur"
+title = "Space Janitors"
 description = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam."
-tech = "Python, TensorFlow, Docker, Redis"
-image = "/images/projects/consectetur.png"
-link = "https://github.com/loremipsum/consectetur"
+tech = "C#, Unity"
+image = "images/projects/space-janitors.png"
+link = "https://github.com/kotach-seong/space-game"
 
 [[params.projects]]
-title = "Adipiscing Platform"
+title = "DDUCK dating simulation"
 description = "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur."
-tech = "React, Node.js, MongoDB, AWS"
-image = "/images/projects/adipiscing.png"
-link = "https://github.com/loremipsum/adipiscing"
-
-[[params.projects]]
-title = "Tempor Analytics"
-description = "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium."
-tech = "Python, FastAPI, PostgreSQL, Docker"
-image = "/images/projects/tempor.png"
-link = "https://github.com/loremipsum/tempor"
-
-[[params.projects]]
-title = "Eiusmod Framework"
-description = "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam."
-tech = "Python, PyTorch, MLflow, Kubernetes"
-image = "/images/projects/eiusmod.png"
-link = "https://github.com/loremipsum/eiusmod"
-
-[[params.projects]]
-title = "Incididunt Engine"
-description = "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus."
-tech = "Python, Scikit-learn, Flask, Redis"
-image = "/images/projects/incididunt.png"
-link = "https://github.com/loremipsum/incididunt"
-
-[[params.projects]]
-title = "Labore System"
-description = "Et harum quidem rerum facilis est et expedita distinctio nam libero tempore."
-tech = "JavaScript, Express, MongoDB, Docker"
-image = "/images/projects/labore.jpg"
-link = "https://github.com/loremipsum/labore"
-
-[[params.projects]]
-title = "Dolore Platform"
-description = "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe."
-tech = "Python, Django, PostgreSQL, Celery"
-image = "/images/projects/dolore.png"
-link = "https://github.com/loremipsum/dolore"
-
-[[params.projects]]
-title = "Magna Analytics"
-description = "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus."
-tech = "Python, Pandas, Streamlit, AWS"
-image = "/images/projects/magna.png"
-link = "https://github.com/loremipsum/magna"
-
-[[params.projects]]
-title = "Aliqua Framework"
-description = "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae."
-tech = "TypeScript, React, GraphQL, Docker"
-image = "/images/projects/aliqua.jpg"
-link = "https://github.com/loremipsum/aliqua"
-
-[[params.projects]]
-title = "Excepteur System"
-description = "Nisi ut aliquid ex ea commodi consequatur quis autem vel eum iure reprehenderit."
-tech = "Python, FastAPI, Redis, Kubernetes"
-image = "/images/projects/excepteur.jpg"
-link = "https://github.com/loremipsum/excepteur"
+tech = "C#, Unity"
+image = "images/projects/dduck.png"
+link = "https://github.com/JUNUKJUNUKJUNUKJUNUKJUNUK/DDUKDDUK"
 
 [[params.blogs]]
-title = "Lorem Ipsum Systems"
-date = "2025-03-15"
+title = "Interests"
 summary = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem."
 tags = ["Lorem", "Ipsum", "Dolor"]
 content = """
@@ -201,9 +137,8 @@ Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit...
 link = "https://medium.com/@loremipsum/lorem-systems"
 
 [[params.blogs]]
-title = "The Future of Dolor"
-date = "2025-02-28"
-summary = "At vero eos et accusamus et iusto odio dignissimos ducimus."
+title = "Currently Learning"
+summary = "I’m interested in game engines and exploring how AI can be used in game development."
 tags = ["Sit", "Amet", "Consectetur"]
 content = """
 Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis...
@@ -211,89 +146,162 @@ Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis...
 link = "https://medium.com/@loremipsum/future-dolor"
 
 [[params.blogs]]
-title = "Adipiscing: A Practical Guide"
-date = "2025-02-10"
-summary = "Nam libero tempore, cum soluta nobis est eligendi optio."
+title = "Future Goals"
+summary = "I’m learning the fundamentals of game development through C# and Unity."
 tags = ["Elit", "Tempor", "Guide"]
 content = """
 Et harum quidem rerum facilis est et expedita distinctio...
 """
 link = "https://medium.com/@loremipsum/adipiscing-guide"
 
-[[params.blogs]]
-title = "Optimizing Incididunt"
-date = "2025-01-20"
-summary = "Temporibus autem quibusdam et aut officiis debitis."
-tags = ["Labore", "Dolore", "Magna"]
-content = """
-Itaque earum rerum hic tenetur a sapiente delectus...
-"""
-link = "https://medium.com/@loremipsum/optimizing-incididunt"
-
-[[params.blogs]]
-title = "Aliqua: A Comprehensive Guide"
-date = "2024-12-15"
-summary = "Quis autem vel eum iure reprehenderit qui in ea voluptate."
-tags = ["Ut", "Enim", "Minim"]
-content = """
-Nisi ut aliquid ex ea commodi consequatur quis autem...
-"""
-link = "https://medium.com/@loremipsum/aliqua-guide"
-
-[[params.blogs]]
-title = "Veniam in Practice"
-date = "2024-11-20"
-summary = "Duis aute irure dolor in reprehenderit in voluptate velit."
-tags = ["Esse", "Cillum", "Dolore"]
-content = """
-Excepteur sint occaecat cupidatat non proident...
-"""
-link = "https://medium.com/@loremipsum/veniam-practice"
-
-[[params.blogs]]
-title = "Fugiat for Systems"
-date = "2024-10-25"
-summary = "Sunt in culpa qui officia deserunt mollit anim id est laborum."
-tags = ["Nulla", "Pariatur", "Systems"]
-content = """
-Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-"""
-link = "https://medium.com/@loremipsum/fugiat-systems"
-
-[[params.blogs]]
-title = "Best Practices in Consectetur"
-date = "2024-09-30"
-summary = "Sed do eiusmod tempor incididunt ut labore et dolore magna."
-tags = ["Best", "Practices", "Guide"]
-content = """
-Ut enim ad minim veniam, quis nostrud exercitation...
-"""
-link = "https://medium.com/@loremipsum/consectetur-practices"
-
 [[params.voluntary]]
-role = "Community Lead"
-organization = "Lorem Foundation"
-period = "2020 - Present"
-description = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis."
+role = "GPU GameProject"
+organization = "GPU Club Activities"
+period = "2026 - Present"
+description = "I create shop environments, including market stalls, for a dating simulation game developed by our club."
 
 [menu]
   [[menu.main]]
+    identifier = "about"
     name = "About"
-    url = "/about/"
+    url = "#about"
     weight = 1
   [[menu.main]]
+    identifier = "experience"
     name = "Experience"
-    url = "/experience/"
+    url = "#experience"
     weight = 2
   [[menu.main]]
+    identifier = "projects"
     name = "Projects"
-    url = "/projects/"
+    url = "#projects"
     weight = 3
   [[menu.main]]
-    name = "Blogs"
-    url = "/blogs/"
+    identifier = "interests-goals"
+    name = "Interests & Goals"
+    url = "#interests-goals"
     weight = 4
   [[menu.main]]
+    identifier = "contact"
     name = "Contact Me"
-    url = "/contact/"
+    url = "#contact"
     weight = 5
+
+# Language-specific text. Shared links and technology names remain in [params].
+[languages.en]
+locale = "en-US"
+label = "English"
+weight = 1
+[languages.en.params]
+languageLabel = "EN"
+
+[languages.ko]
+locale = "ko-KR"
+label = "한국어"
+title = "오성준 포트폴리오"
+weight = 2
+[languages.ko.params]
+languageLabel = "KR"
+name = "오성준"
+location = "대한민국 남원"
+description = "AI와 게임 개발을 공부하는 전북대학교 학생입니다."
+
+[[languages.ko.params.experience]]
+role = "MAKGAN"
+period = "2026년 3월"
+description = "주변 음식점, 병원 등의 대기시간을 알려주어 사용자의 대기시간을 줄이는 앱을 개발했습니다."
+
+[[languages.ko.params.experience]]
+role = "2D 던전 청소부"
+period = "2026년 3월 ~ 현재"
+description = "모험가들이 지나간 던전을 청소하며 보물을 모으고, 남아 있는 적을 물리치면서 점점 강해지는 게임입니다."
+
+[[languages.ko.params.experience]]
+role = "DDUCK 연애 시뮬레이션"
+period = "2026년 10월 ~ 현재"
+description = "떡집을 운영하며 돈을 벌고, 번 돈으로 여성 캐릭터들과 데이트를 하는 게임입니다."
+
+[[languages.ko.params.experience]]
+role = "Space Janitors"
+period = "2026년 4월 ~ 현재"
+description = "난파된 우주선을 청소하고 적을 처치하며 우주의 잔해를 정리하는 게임입니다."
+
+[[languages.ko.params.projects]]
+title = "Space Janitors"
+description = "난파된 우주선을 청소하고 적을 처치하며 우주의 잔해를 정리하는 게임입니다."
+tech = "C#, Unity"
+image = "images/projects/space-janitors.png"
+link = "https://github.com/kotach-seong/space-game"
+
+[[languages.ko.params.projects]]
+title = "DDUCK 연애 시뮬레이션"
+description = "떡집을 운영하며 돈을 벌고, 번 돈으로 여성 캐릭터들과 데이트를 하는 게임입니다."
+tech = "C#, Unity"
+image = "images/projects/dduck.png"
+link = "https://github.com/JUNUKJUNUKJUNUKJUNUKJUNUK/DDUKDDUK"
+
+[[languages.ko.params.blogs]]
+title = "관심 분야"
+summary = "AI를 게임 제작에 활용하는 방법과 게임 엔진에 관심이 있습니다."
+
+[[languages.ko.params.blogs]]
+title = "현재 배우는 것"
+summary = "C#과 Unity 등을 공부하며 게임 개발의 기초를 배우고 있습니다."
+
+[[languages.ko.params.blogs]]
+title = "앞으로의 목표"
+summary = "배운 내용을 작은 프로젝트에 적용하며, 하나의 게임을 완성하는 것이 목표입니다."
+
+[[languages.ko.params.voluntary]]
+role = "게임 프로젝트"
+organization = "GPU 동아리"
+period = "2026년 ~ 현재"
+description = "동아리에서 개발하는 연애 시뮬레이션 게임의 가판대 등 상점 환경을 제작하고 있습니다."
+
+[[languages.ko.params.honors]]
+institution = "멋쟁이사자처럼 부트캠프"
+title = "멋쟁이사자처럼 해커톤"
+date = "2026년 3월"
+
+[[languages.ko.params.honors]]
+institution = "who kathon"
+title = "Who 해커톤"
+date = "2025년 11월"
+
+[[languages.ko.params.certifications]]
+title = "정보처리기능사"
+date = "2023년 12월"
+
+[[languages.ko.params.certifications]]
+title = "자동차보수도장기능사"
+date = "2022년 3월"
+
+[[languages.ko.menus.main]]
+identifier = "about"
+name = "소개"
+url = "#about"
+weight = 1
+
+[[languages.ko.menus.main]]
+identifier = "experience"
+name = "경험"
+url = "#experience"
+weight = 2
+
+[[languages.ko.menus.main]]
+identifier = "projects"
+name = "프로젝트"
+url = "#projects"
+weight = 3
+
+[[languages.ko.menus.main]]
+identifier = "interests-goals"
+name = "관심 분야와 목표"
+url = "#interests-goals"
+weight = 4
+
+[[languages.ko.menus.main]]
+identifier = "contact"
+name = "연락처"
+url = "#contact"
+weight = 5

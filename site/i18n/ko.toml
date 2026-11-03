@@ -1,0 +1,53 @@
+[whatIWorkWith]
+other = "사용하는 기술과 도구"
+
+[experienceTitle]
+other = "경험"
+
+[voluntaryTitle]
+other = "동아리 활동"
+
+[certificationsTitle]
+other = "자격증"
+
+[honorsTitle]
+other = "수상 및 활동"
+
+[projectsTitle]
+other = "프로젝트"
+
+[blogsTitle]
+other = "블로그"
+
+[interestsGoalsTitle]
+other = "관심 분야와 목표"
+
+[viewAll]
+other = "전체 보기"
+
+[localTimeLabel]
+other = "현지 시각:"
+
+[menuTitle]
+other = "메뉴"
+
+[learnMore]
+other = "자세히 보기"
+
+[builtUsing]
+other = "제작 도구:"
+
+[takeALookAtMy]
+other = "더 보기:"
+
+[languageMenuLabel]
+other = "언어 선택"
+
+[languagesPlatforms]
+other = "프로그래밍 언어와 플랫폼"
+
+[aiToolsEngines]
+other = "AI 도구와 게임 엔진"
+
+[openDiscordProfile]
+other = "디스코드 프로필 열기"
