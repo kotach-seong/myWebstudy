@@ -98,7 +98,7 @@ summary = "My goal is to apply what I’ve learned to complete my projects. In p
 role = "GPU GameProject"
 organization = "GPU Club Activities"
 period = "2026 - Present"
-description = "I create shop environments, including market stalls, for a dating simulation game developed by our club."
+description = "I use Unity and C#, which I’ve been learning for game development, to create shop environments, including market stalls, for our club’s dating simulation game. I also use AI models with PyTorch to generate questions and answers for randomized customer quizzes."
 
 [menu]
   [[menu.main]]
@@ -203,7 +203,7 @@ summary = "배운 내용을 토대로 프로젝트를 완성시키고, 현재 �
 role = "게임 프로젝트"
 organization = "GPU 동아리"
 period = "2026년 ~ 현재"
-description = "동아리에서 개발하는 연애 시뮬레이션 게임의 가판대 등 상점 환경을 제작하고 있습니다."
+description = "게임 개발을 위해 공부한 Unity, c# 등을 이용해 동아리의 단체 프로젝트인 연애 시뮬레이션 게임에서 Unity로 가판대 등 가게 환경을 제작하고 있습니다. 또한 손님들의 랜덤한 퀴즈를 위해 Pytorch를 활용해 손님들의 답변, 질문들을 ai를 이용해 만들고 있습니다."
 
 [[languages.ko.params.honors]]
 institution = "멋쟁이사자처럼 부트캠프"
