@@ -1,9 +1,8 @@
-baseURL = "https://johndoe.dev"
+baseURL = "https://kotach-seong.github.io/myWebstudy/"
 locale = 'en-us'
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 title = 'Project Website'
-
 
 # URL handling
 relativeURLs = true
@@ -20,42 +19,10 @@ location = "NamWon, Republic of Korea"
 description = "AI Developer. Game Developer. student at JBNU. "
 discord = "https://discord.com/users/425610371508731914"
 github = "https://github.com/kotach-seong"
-github_username = "johndoe123"
+github_username = "kotach-seong"
 email = "booc456@jbnu.ac.kr"
-twitter = "https://www.twitter.com/johndoe123"
-twitter_username = "johndoe123"
-medium = "https://www.medium.com/@johndoe123"
-steam = "https://steamcommunity.com/profiles/76561199021434695/" # Add your Steam profile URL here
+steam = "https://steamcommunity.com/profiles/76561199021434695/"
 steam_username = "Hubert"
-instagram = "https://instagram.com/johndoe123"
-leetcode = "https://leetcode.com/johndoe123"
-leetcode_username = "johndoe123"
-monkeytype = "https://monkeytype.com/profile/johndoe123"
-monkeytype_username = "johndoe123"
-kaggle = "https://www.kaggle.com/johndoe123"
-kaggle_username = "johndoe123"
-
-[params.tech]
-  row1 = [
-    { icon = "devicon-python-plain", name = "Python" },
-    { icon = "devicon-go-plain", name = "Go" },
-    { icon = "devicon-javascript-plain", name = "JavaScript" },
-    { icon = "devicon-typescript-plain", name = "TypeScript" },
-    { icon = "devicon-react-original", name = "React" },
-    { icon = "devicon-vuejs-plain", name = "Vue.js" },
-    { icon = "devicon-html5-plain", name = "HTML5" },
-    { icon = "devicon-css3-plain", name = "CSS3" }
-  ]
-  row2 = [
-    { icon = "devicon-docker-plain", name = "Docker" },
-    { icon = "devicon-kubernetes-plain", name = "Kubernetes" },
-    { icon = "devicon-nginx-original", name = "Nginx" },
-    { icon = "devicon-postgresql-plain", name = "PostgreSQL" },
-    { icon = "devicon-redis-plain", name = "Redis" },
-    { icon = "devicon-git-plain", name = "Git" },
-    { icon = "devicon-hugo-plain", name = "Hugo" },
-    { icon = "devicon-tailwindcss-plain", name = "TailwindCSS" }
-  ]
 
 [[params.honors]]
 institution = "likelion bootcamp"
@@ -79,80 +46,47 @@ date = "March 2022"
 role = "MAKGAN"
 period = "March 2026 - March 2026"
 description = "Developed an app that shows wait times at nearby restaurants, hospitals, and other facilities to help users reduce waiting time."
-responsibilities = [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    "Ut enim ad minim veniam, quis nostrud exercitation",
-    "Duis aute irure dolor in reprehenderit in voluptate",
-    "Excepteur sint occaecat cupidatat non proident"
-]
 
 [[params.experience]]
 role = "2D Dungeon cleaner"
 period = "March 2026 - present"
 description = "A game where you clean up dungeons after adventurers have passed through, collect treasure, defeat remaining enemies, and grow stronger along the way."
-responsibilities = [
-    "Sed ut perspiciatis unde omnis iste natus error",
-    "Nemo enim ipsam voluptatem quia voluptas sit",
-    "At vero eos et accusamus et iusto odio dignissimos",
-    "Et harum quidem rerum facilis est et expedita"
-]
 
 [[params.experience]]
 role = "DDuck dating sim"
 period = "October 2026 - present"
 description = "A game where you run a rice cake shop, earn money, and use your earnings to go on dates with female characters."
-responsibilities = [
-    "Nam libero tempore, cum soluta nobis est eligendi",
-    "Temporibus autem quibusdam et aut officiis debitis",
-    "Itaque earum rerum hic tenetur a sapiente delectus"
-]
 
 [[params.experience]]
 role = "Space Janitors"
 period = "April 2026 - Present"
 description = "A game where you clean up wrecked spaceships, defeat enemies, and clear debris from space."
-github_username = "loremipsum"
 
 [[params.projects]]
 title = "Space Janitors"
-description = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam."
+description = "A game where you clean up wrecked spaceships, defeat enemies, and clear debris from space."
 tech = "C#, Unity"
 image = "images/projects/space-janitors.png"
 link = "https://github.com/kotach-seong/space-game"
 
 [[params.projects]]
 title = "DDUCK dating simulation"
-description = "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur."
+description = "A game where you run a rice cake shop, earn money, and use your earnings to go on dates with female characters."
 tech = "C#, Unity"
 image = "images/projects/dduck.png"
 link = "https://github.com/JUNUKJUNUKJUNUKJUNUKJUNUK/DDUKDDUK"
 
 [[params.blogs]]
 title = "Interests"
-summary = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem."
-tags = ["Lorem", "Ipsum", "Dolor"]
-content = """
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit...
-"""
-link = "https://medium.com/@loremipsum/lorem-systems"
+summary = "I’m interested in game engines and exploring how AI can be used in game development."
 
 [[params.blogs]]
 title = "Currently Learning"
-summary = "I’m interested in game engines and exploring how AI can be used in game development."
-tags = ["Sit", "Amet", "Consectetur"]
-content = """
-Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis...
-"""
-link = "https://medium.com/@loremipsum/future-dolor"
+summary = "I’m learning the fundamentals of game development through C# and Unity."
 
 [[params.blogs]]
 title = "Future Goals"
-summary = "I’m learning the fundamentals of game development through C# and Unity."
-tags = ["Elit", "Tempor", "Guide"]
-content = """
-Et harum quidem rerum facilis est et expedita distinctio...
-"""
-link = "https://medium.com/@loremipsum/adipiscing-guide"
+summary = "My goal is to apply what I learn to small projects and eventually complete a playable game."
 
 [[params.voluntary]]
 role = "GPU GameProject"
@@ -171,21 +105,28 @@ description = "I create shop environments, including market stalls, for a dating
     name = "Experience"
     url = "#experience"
     weight = 2
+
+[[menu.main]]
+identifier = "volunteering"
+name = "Volunteering"
+url = "#volunteering"
+weight = 3
+
   [[menu.main]]
     identifier = "projects"
     name = "Projects"
     url = "#projects"
-    weight = 3
+    weight = 4
   [[menu.main]]
     identifier = "interests-goals"
     name = "Interests & Goals"
     url = "#interests-goals"
-    weight = 4
-  [[menu.main]]
-    identifier = "contact"
-    name = "Contact Me"
-    url = "#contact"
     weight = 5
+  [[menu.main]]
+    identifier = "game"
+    name = "Game"
+    url = "game/"
+    weight = 6
 
 # Language-specific text. Shared links and technology names remain in [params].
 [languages.en]
@@ -289,19 +230,25 @@ url = "#experience"
 weight = 2
 
 [[languages.ko.menus.main]]
+identifier = "volunteering"
+name = "동아리 활동"
+url = "#volunteering"
+weight = 3
+
+[[languages.ko.menus.main]]
 identifier = "projects"
 name = "프로젝트"
 url = "#projects"
-weight = 3
+weight = 4
 
 [[languages.ko.menus.main]]
 identifier = "interests-goals"
 name = "관심 분야와 목표"
 url = "#interests-goals"
-weight = 4
+weight = 5
 
 [[languages.ko.menus.main]]
-identifier = "contact"
-name = "연락처"
-url = "#contact"
-weight = 5
+identifier = "game"
+name = "게임"
+url = "game/"
+weight = 6

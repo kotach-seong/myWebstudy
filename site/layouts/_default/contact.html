@@ -31,6 +31,7 @@
                         </div>
                     </button>
 
+{{ if .Site.Params.twitter }}
                     <!-- Twitter -->
                     <a href="{{ .Site.Params.twitter }}" target="_blank" class="contact-link flex items-center gap-4 p-4 rounded-lg bg-bg-primary-light dark:bg-bg-secondary-dark transition-all duration-300">
                         <svg class="w-7 h-7 text-text-secondary-light dark:text-text-secondary-dark shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.75">
@@ -41,6 +42,7 @@
                             <div class="text-sm text-text-tertiary-light dark:text-text-tertiary-dark truncate">@{{ .Site.Params.twitter_username }}</div>
                         </div>
                     </a>
+                    {{ end }}
 
                     <!-- Steam -->
                     <a {{ with .Site.Params.steam }}href="{{ . }}" target="_blank" rel="noopener noreferrer"{{ else }}role="link" aria-disabled="true"{{ end }} aria-label="Steam" class="contact-link flex items-center gap-4 p-4 rounded-lg bg-bg-primary-light dark:bg-bg-secondary-dark transition-all duration-300">

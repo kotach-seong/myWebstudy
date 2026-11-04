@@ -1,0 +1,29 @@
+{{ define "main" }}
+<section class="game-lobby" aria-labelledby="game-lobby-title">
+  <div class="game-lobby__eyebrow">{{ T "browserGame" }}</div>
+  <div class="game-lobby__panel">
+    <svg class="game-lobby__icon" width="96" height="72" viewBox="0 0 96 72" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M31 20h34c9 0 14 7 17 17l5 17c2 8-6 13-12 7L64 49H32L21 61c-6 6-14 1-12-7l5-17c3-10 8-17 17-17Z"/>
+      <path d="M30 30v16m-8-8h16m10-18v-7c0-5 4-8 9-8"/>
+      <circle cx="66" cy="33" r="2" fill="currentColor" stroke="none"/>
+      <circle cx="74" cy="41" r="2" fill="currentColor" stroke="none"/>
+    </svg>
+    <h1 id="game-lobby-title">{{ T "gameComingSoon" }}</h1>
+    <p>{{ T "gameInProgress" }}</p>
+    <a class="game-lobby__back" href="{{ site.Home.RelPermalink }}">← {{ T "backToPortfolio" }}</a>
+  </div>
+</section>
+<style>
+.game-lobby { width: min(880px, calc(100% - 32px)); margin: 4rem auto 0; color: inherit; }
+.game-lobby__eyebrow { font-size: .8rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; opacity: .6; margin-bottom: 1.1rem; }
+.game-lobby__panel { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 5rem 2rem; border: 1px solid #d1d5db; border-radius: 16px; background: #f7f7f7; }
+.dark .game-lobby__panel { border-color: #363636; background: linear-gradient(145deg, #1d1d1d, #141414); }
+.game-lobby__icon { opacity: .75; margin-bottom: 2rem; }
+.game-lobby h1 { font-size: clamp(1.65rem, 4vw, 2.6rem); font-weight: 700; line-height: 1.35; margin: 0 0 1rem; }
+.game-lobby p { max-width: 440px; line-height: 1.8; opacity: .6; margin: 0 0 2.25rem; }
+.game-lobby__back { border: 1px solid currentColor; border-radius: 8px; padding: .8rem 1.25rem; text-decoration: none; font-size: .9rem; transition: opacity .2s; }
+.game-lobby__back:hover { opacity: .65; }
+.game-lobby__back:focus-visible { outline: 2px solid #38bdf8; outline-offset: 4px; }
+@media (max-width: 600px) { .game-lobby { margin-top: 2rem; } .game-lobby__panel { padding: 3.5rem 1.25rem; } }
+</style>
+{{ end }}

@@ -52,3 +52,15 @@ other = "AI tools and engines"
 
 [openDiscordProfile]
 other = "Open Discord Profile"
+
+[browserGame]
+other = "Browser game"
+
+[gameComingSoon]
+other = "Something fun is coming."
+
+[gameInProgress]
+other = "A small game to play right here. More details soon."
+
+[backToPortfolio]
+other = "Back to portfolio"

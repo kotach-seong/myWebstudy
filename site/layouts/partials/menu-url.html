@@ -1,5 +1,11 @@
 {{- if hasPrefix .URL "#" -}}
     {{- printf "%s%s" site.Home.RelPermalink .URL -}}
+{{- else if eq .Identifier "game" -}}
+    {{- with site.GetPage "game" -}}
+        {{- .RelPermalink -}}
+    {{- else -}}
+        {{- printf "%sgame/" site.Home.RelPermalink -}}
+    {{- end -}}
 {{- else -}}
     {{- .URL | absURL -}}
 {{- end -}}

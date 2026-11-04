@@ -93,7 +93,7 @@
     {{ $voluntary := cond (and $voluntaryData $voluntaryData.voluntary) $voluntaryData.voluntary site.Params.voluntary }}
 
     {{ with $voluntary }}
-    <section class="mt-20">
+    <section id="volunteering" class="mt-20">
         <h2 class="text-4xl font-bold mb-5">{{ T "voluntaryTitle" }}</h2>
         <div class="space-y-4 max-w-3xl mx-auto">
             {{ range $index, $vol := . }}
@@ -225,16 +225,9 @@
         </div>
         <div class="space-y-8 max-w-3xl mx-auto">
             {{ range first 3 . }}
-            <div class="group">
-                <p class="text-gray-400 text-sm mb-1">{{ .date }}</p>
-                {{ if .link }}<a href="{{ .link }}" class="block group" target="_blank" rel="noopener noreferrer">{{ end }}
-                    <h3 class="inline-flex items-center text-xl font-medium text-text-primary-light dark:text-white hover:text-accent-light dark:hover:text-accent-dark transition-colors duration-200 mb-3">
-                        {{ .title }}
-                        {{ if .link }}<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 opacity-70 group-hover:opacity-100 transition-opacity duration-200">
-                            <path d="M7 17l9.2-9.2M17 17V7H7"/>
-                        </svg>{{ end }}
-                    </h3>
-                {{ if .link }}</a>{{ end }}
+            <div>
+                {{ with .date }}<p class="text-gray-400 text-sm mb-1">{{ . }}</p>{{ end }}
+                <h3 class="text-xl font-medium text-text-primary-light dark:text-white mb-3">{{ .title }}</h3>
                 <p class="text-gray-400">{{ .summary }}</p>
             </div>
             {{ end }}
