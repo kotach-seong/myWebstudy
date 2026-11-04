@@ -121,7 +121,7 @@
             <h2 class="text-2xl md:text-4xl font-bold">{{ T "projectsTitle" }}</h2>
         </div>
         <div class="grid grid-cols-1 gap-6 md:gap-8 max-w-3xl mx-auto">
-            {{ range first 2 . }}
+            {{ range $index, $project := first 2 . }}
             <div class="project-card relative overflow-hidden rounded-lg bg-[#121212] border border-gray-700 transition-all duration-300 group">
                 <div class="aspect-w-16 aspect-h-9 overflow-hidden relative">
                     <div class="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 z-10"></div>
@@ -139,22 +139,25 @@
                         </div>
                         <p class="hidden md:block text-sm text-white mb-3 line-clamp-3 md:line-clamp-4">{{ .description }}</p>
 
-                        <!-- Learn More button -->
-                        <a href="{{ .link }}" class="bg-white/90 backdrop-blur-sm hover:bg-white text-black text-xs md:text-sm font-medium py-1 md:py-1.5 px-2 md:px-3 rounded-md inline-block transition-all duration-300 transform opacity-100 md:opacity-0 group-hover:opacity-100 w-fit flex items-center shadow-lg hover:shadow-xl">
-                            {{ T "learnMore" }}
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 ml-1 transform group-hover:translate-x-1 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                            </svg>
-                        </a>
+                        <div class="project-actions">
+                            <a href="{{ .link }}" class="project-action">
+                                {{ T "learnMore" }}
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                            </a>
+                            <button type="button" class="project-action project-action--details" data-open-project aria-haspopup="dialog" aria-controls="project-details-{{ $index }}">{{ T "projectDetailsButton" }}</button>
+                        </div>
                     </div>
                 </div>
             </div>
+            {{ partial "project-details.html" (dict "project" $project "id" (printf "project-details-%d" $index)) }}
             {{ end }}
         </div>
     </section>
     {{ else }}
     {{ warnf "No project data found for language %q. Please define either data/%s/projects.(yaml|toml|json) or params.projects in config." .Language.Lang .Language.Lang }}
     {{ end }}
+
+    {{ partial "project-details-behavior.html" . }}
 
     <!-- Honors & Certifications -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-20 mb-20 max-w-3xl mx-auto">

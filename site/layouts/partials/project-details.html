@@ -1,0 +1,28 @@
+{{ $id := .id }}
+{{ $project := .project }}
+{{ with .project }}
+<dialog id="{{ $id }}" class="project-dialog" aria-labelledby="{{ $id }}-title">
+    <div class="project-dialog__header">
+        <div>
+            <p class="project-dialog__label">{{ T "projectDetails" }}</p>
+            <h2 id="{{ $id }}-title">{{ .title }}</h2>
+        </div>
+        <button type="button" class="project-dialog__close" data-close-project aria-label="{{ T "closeProjectDetails" }}" autofocus>×</button>
+    </div>
+    <div class="project-dialog__body">{{ (.details | default .description) | markdownify }}</div>
+    <dl class="project-dialog__meta">
+        {{ with .period }}<div><dt>{{ T "projectPeriod" }}</dt><dd>{{ . }}</dd></div>{{ end }}
+        {{ with .status }}<div><dt>{{ T "projectStatus" }}</dt><dd>{{ . }}</dd></div>{{ end }}
+        {{ with .project_type }}<div><dt>{{ T "projectType" }}</dt><dd>{{ . }}</dd></div>{{ end }}
+    </dl>
+    {{ range $section := slice (dict "key" "my_role" "label" "projectRole") (dict "key" "challenges" "label" "projectChallenges") (dict "key" "goal" "label" "projectGoal") (dict "key" "approach" "label" "projectApproach") (dict "key" "limitations" "label" "projectLimitations") }}
+        {{ with (index $project $section.key | default "" | strings.TrimSpace) }}
+        <section class="project-dialog__section">
+            <h3>{{ T $section.label }}</h3>
+            <div class="project-dialog__body">{{ . | markdownify }}</div>
+        </section>
+        {{ end }}
+    {{ end }}
+    {{ with .tech }}<p class="project-dialog__tech">{{ T "projectTechnologies" }}: {{ . }}</p>{{ end }}
+</dialog>
+{{ end }}

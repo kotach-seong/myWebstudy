@@ -71,6 +71,29 @@ description = "A game where you clean up wrecked spaceships, defeat enemies, and
 [[params.projects]]
 title = "Space Janitors"
 description = "A game where you clean up wrecked spaceships, defeat enemies, and clear debris from space."
+details = """
+A game where you clean up wrecked spaceships, defeat enemies, and clear debris from space.
+"""
+period = "April 2026 - Present"
+status = "In progress"
+project_type = "Individual project"
+
+# Fill in the fields below. Empty sections are hidden on the site.
+my_role = """
+Individual game development using C# and Unity.
+"""
+challenges = """
+
+"""
+goal = """
+My goal is to finish and release the spaceship-cleaning game I am currently developing.
+"""
+approach = """
+
+"""
+limitations = """
+
+"""
 tech = "C#, Unity"
 image = "images/projects/space-janitors.png"
 link = "https://github.com/kotach-seong/space-game"
@@ -78,6 +101,29 @@ link = "https://github.com/kotach-seong/space-game"
 [[params.projects]]
 title = "DDUCK dating simulation"
 description = "A game where you run a rice cake shop, earn money, and use your earnings to go on dates with female characters."
+details = """
+A game where you run a rice cake shop, earn money, and use your earnings to go on dates with female characters.
+"""
+period = "October 2026 - Present"
+status = "In progress"
+project_type = "Team project"
+
+# Fill in the fields below. Empty sections are hidden on the site.
+my_role = """
+I use Unity and C#, which I’ve been learning for game development, to create shop environments, including market stalls, for our club’s dating simulation game. I also use AI models with PyTorch to generate questions and answers for randomized customer quizzes.
+"""
+challenges = """
+
+"""
+goal = """
+
+"""
+approach = """
+
+"""
+limitations = """
+
+"""
 tech = "C#, Unity"
 image = "images/projects/dduck.png"
 link = "https://github.com/JUNUKJUNUKJUNUKJUNUKJUNUK/DDUKDDUK"
@@ -176,6 +222,29 @@ description = "난파된 우주선을 청소하고 적을 처치하며 우주의
 [[languages.ko.params.projects]]
 title = "Space Janitors"
 description = "난파된 우주선을 청소하고 적을 처치하며 우주의 잔해를 정리하는 게임입니다."
+details = """
+난파된 우주선을 청소하고 적을 처치하며 우주의 잔해를 정리하는 게임입니다.
+"""
+period = "2026년 4월 ~ 현재"
+status = "진행 중"
+project_type = "개인 프로젝트"
+
+# 아래 내용을 따옴표 사이에 작성하세요. 빈 항목은 사이트에서 숨겨집니다.
+my_role = """
+C#과 Unity를 사용한 개인 게임 개발.
+"""
+challenges = """
+
+"""
+goal = """
+현재 개발 중인 우주선 청소게임을 완성하여 배포하는 것이 목표입니다.
+"""
+approach = """
+
+"""
+limitations = """
+
+"""
 tech = "C#, Unity"
 image = "images/projects/space-janitors.png"
 link = "https://github.com/kotach-seong/space-game"
@@ -183,6 +252,29 @@ link = "https://github.com/kotach-seong/space-game"
 [[languages.ko.params.projects]]
 title = "DDUCK 연애 시뮬레이션"
 description = "떡집을 운영하며 돈을 벌고, 번 돈으로 여성 캐릭터들과 데이트를 하는 게임입니다."
+details = """
+떡집을 운영하며 돈을 벌고, 번 돈으로 여성 캐릭터들과 데이트를 하는 게임입니다.
+"""
+period = "2026년 10월 ~ 현재"
+status = "진행 중"
+project_type = "팀 프로젝트"
+
+# 아래 내용을 따옴표 사이에 작성하세요. 빈 항목은 사이트에서 숨겨집니다.
+my_role = """
+게임 개발을 위해 공부한 Unity, c# 등을 이용해 동아리의 단체 프로젝트인 연애 시뮬레이션 게임에서 Unity로 가판대 등 가게 환경을 제작하고 있습니다. 또한 손님들의 랜덤한 퀴즈를 위해 Pytorch를 활용해 손님들의 답변, 질문들을 ai를 이용해 만들고 있습니다.
+"""
+challenges = """
+
+"""
+goal = """
+
+"""
+approach = """
+
+"""
+limitations = """
+
+"""
 tech = "C#, Unity"
 image = "images/projects/dduck.png"
 link = "https://github.com/JUNUKJUNUKJUNUKJUNUKJUNUK/DDUKDDUK"

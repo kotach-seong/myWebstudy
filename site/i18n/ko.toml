@@ -66,3 +66,39 @@ other = "포트폴리오로 돌아가기"
 
 [backToTop]
 other = "맨 위로"
+
+[projectDetails]
+other = "프로젝트 설명"
+
+[closeProjectDetails]
+other = "프로젝트 설명 닫기"
+
+[projectTechnologies]
+other = "사용 기술"
+
+[projectPeriod]
+other = "기간"
+
+[projectStatus]
+other = "진행 상태"
+
+[projectType]
+other = "프로젝트 유형"
+
+[projectRole]
+other = "담당 작업"
+
+[projectChallenges]
+other = "문제점과 해결 과정"
+
+[projectGoal]
+other = "달성하려는 목표"
+
+[projectApproach]
+other = "수행 단계·도구·선택 이유"
+
+[projectLimitations]
+other = "한계와 개선 방향"
+
+[projectDetailsButton]
+other = "상세 설명"

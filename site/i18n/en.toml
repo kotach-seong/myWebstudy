@@ -67,3 +67,39 @@ other = "Back to portfolio"
 
 [backToTop]
 other = "Back to top"
+
+[projectDetails]
+other = "Project Details"
+
+[closeProjectDetails]
+other = "Close project details"
+
+[projectTechnologies]
+other = "Technologies"
+
+[projectPeriod]
+other = "Period"
+
+[projectStatus]
+other = "Status"
+
+[projectType]
+other = "Project type"
+
+[projectRole]
+other = "My role"
+
+[projectChallenges]
+other = "Problems and solutions"
+
+[projectGoal]
+other = "Goal"
+
+[projectApproach]
+other = "Process, tools and reasons for choices"
+
+[projectLimitations]
+other = "Limitations and future improvements"
+
+[projectDetailsButton]
+other = "Details"

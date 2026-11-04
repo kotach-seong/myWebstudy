@@ -1,0 +1,86 @@
+<style>
+    .project-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+    .project-action {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        min-height: 44px;
+        padding: 6px 12px;
+        border: 1px solid transparent;
+        border-radius: 6px;
+        background: rgba(255,255,255,.9);
+        color: #111;
+        font: inherit;
+        font-size: .875rem;
+        font-weight: 500;
+        line-height: 1.4;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .project-action:hover { background: #fff; }
+    .project-action--details { background: rgba(0,0,0,.3); border-color: rgba(255,255,255,.5); color: #fff; }
+    .project-action--details:hover { background: rgba(255,255,255,.16); }
+    .project-action:focus-visible, .project-dialog__close:focus-visible { outline: 2px solid #38bdf8; outline-offset: 3px; }
+    .project-dialog {
+        width: min(44rem, calc(100% - 32px));
+        max-height: 85vh;
+        max-height: 85dvh;
+        margin: auto;
+        padding: 24px;
+        overflow: auto;
+        overscroll-behavior: contain;
+        border: 1px solid #d1d5db;
+        border-radius: 14px;
+        background: #fff;
+        color: #111827;
+        box-shadow: 0 24px 80px rgba(0,0,0,.35);
+    }
+    .dark .project-dialog { background: #1a1a1a; color: #f3f4f6; border-color: #404040; }
+    .project-dialog::backdrop { background: rgba(0,0,0,.72); }
+    .project-dialog__header { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; margin-bottom: 24px; }
+    .project-dialog__label { font-size: .875rem; opacity: .7; margin: 0 0 8px; }
+    .project-dialog h2 { font-size: 1.5rem; font-weight: 700; line-height: 1.3; overflow-wrap: anywhere; }
+    .project-dialog__close { flex: 0 0 44px; width: 44px; height: 44px; border: 1px solid currentColor; border-radius: 50%; background: transparent; color: inherit; font-size: 1.5rem; line-height: 1; cursor: pointer; }
+    .project-dialog__close:hover { background: rgba(127,127,127,.15); }
+    .project-dialog__body { line-height: 1.75; overflow-wrap: anywhere; }
+    .project-dialog__body > * + * { margin-top: 16px; }
+    .project-dialog__body h3 { font-size: 1.125rem; font-weight: 600; }
+    .project-dialog__body ul { list-style: disc; padding-left: 24px; }
+    .project-dialog__body ol { list-style: decimal; padding-left: 24px; }
+    .project-dialog__body a { text-decoration: underline; text-underline-offset: 3px; }
+    .project-dialog__meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 16px; margin-top: 24px; padding-block: 16px; border-block: 1px solid rgba(127,127,127,.3); }
+    .project-dialog__meta dt { font-size: .875rem; opacity: .7; margin-bottom: 4px; }
+    .project-dialog__meta dd { font-weight: 500; overflow-wrap: anywhere; }
+    .project-dialog__section { margin-top: 24px; }
+    .project-dialog__section h3 { font-size: 1.125rem; font-weight: 600; margin-bottom: 8px; }
+    .project-dialog__tech { margin-top: 24px; padding-top: 16px; border-top: 1px solid rgba(127,127,127,.3); font-size: .875rem; opacity: .8; }
+    @media (max-width: 480px) { .project-dialog { padding: 20px; } .project-action { font-size: .75rem; padding-inline: 10px; } }
+    @media (max-width: 767px) {
+        #projects .project-card > .aspect-w-16 { min-height: 300px; }
+        #projects .project-card > .aspect-w-16 > img { position: absolute; inset: 0; width: 100%; height: 100%; }
+    }
+</style>
+<script>
+(() => {
+    let previousOverflow = '';
+    document.querySelectorAll('[data-open-project]').forEach(button => {
+        const dialog = document.getElementById(button.getAttribute('aria-controls'));
+        if (!dialog) return;
+        button.addEventListener('click', () => {
+            previousOverflow = document.documentElement.style.overflow;
+            dialog.showModal();
+            document.documentElement.style.overflow = 'hidden';
+        });
+        dialog.querySelector('[data-close-project]').addEventListener('click', () => dialog.close());
+        dialog.addEventListener('click', event => {
+            const rect = dialog.getBoundingClientRect();
+            if (event.target === dialog && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) dialog.close();
+        });
+        dialog.addEventListener('close', () => {
+            document.documentElement.style.overflow = previousOverflow;
+            button.focus({preventScroll: true});
+        });
+    });
+})();
+</script>
