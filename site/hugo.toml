@@ -83,7 +83,7 @@ summary = "I’m interested in game development because it allows me to bring my
 
 [[params.blogs]]
 title = "Currently Learning"
-summary = "I’m learning the fundamentals of game development through C# and Unity."
+summary = "I’m learning C#, Unity, and Unreal Engine for game development, and studying PyTorch to work with AI."
 
 [[params.blogs]]
 title = "Future Goals"
@@ -188,7 +188,7 @@ summary = "내 아이디어를 실현할 수 있어서 게임 개발에 관심�
 
 [[languages.ko.params.blogs]]
 title = "현재 배우는 것"
-summary = "C#과 Unity 등을 공부하며 게임 개발의 기초를 배우고 있습니다."
+summary = "게임 개발을 위해 C#과 Unity, Unreal를 공부중이며, ai를 활용하기 위헤 파이토치를 공부중입니다."
 
 [[languages.ko.params.blogs]]
 title = "앞으로의 목표"
