@@ -87,7 +87,7 @@ summary = "I’m learning C#, Unity, and Unreal Engine for game development, and
 
 [[params.blogs]]
 title = "Future Goals"
-summary = "My goal is to apply what I learn to small projects and eventually complete a playable game."
+summary = "My goal is to apply what I’ve learned to complete my projects and eventually develop and release a polished game."
 
 [[params.voluntary]]
 role = "GPU GameProject"
@@ -192,7 +192,7 @@ summary = "게임 개발을 위해 C#과 Unity, Unreal를 공부중이며, ai를
 
 [[languages.ko.params.blogs]]
 title = "앞으로의 목표"
-summary = "배운 내용을 작은 프로젝트에 적용하며, 하나의 게임을 완성하는 것이 목표입니다."
+summary = "배운 내용을 토대로 프로젝트를 완성시키고, 완성도가 높은 게임을 하나 만들어서 배포를 해보는 것이 목표입니다."
 
 [[languages.ko.params.voluntary]]
 role = "게임 프로젝트"
