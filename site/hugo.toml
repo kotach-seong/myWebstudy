@@ -2,7 +2,7 @@ baseURL = "https://kotach-seong.github.io/myWebstudy/"
 locale = 'en-us'
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
-title = 'Project Website'
+title = 'Oh Seong Jun | Learning & Creating'
 
 # URL handling
 relativeURLs = true
