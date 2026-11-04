@@ -80,19 +80,19 @@ project_type = "Individual project"
 
 # Fill in the fields below. Empty sections are hidden on the site.
 my_role = """
-Individual game development using C# and Unity.
+Responsible for the entire project.
 """
 challenges = """
-
+Implementing physics-based movement in space was challenging. I adjusted movement speed and inertia through repeated playtesting to bring the movement closer to the feel I wanted. I am continuing to refine it.
 """
 goal = """
-My goal is to finish and release the spaceship-cleaning game I am currently developing.
+My goal is to finish the game and release it on a game storefront such as Steam.
 """
 approach = """
-
+I chose Unity and C# because I was already learning them and wanted to apply my knowledge to a complete game. I am developing core features such as movement, cleaning, and combat step by step, while testing how they work together.
 """
 limitations = """
-
+I wanted to create AI-driven enemies that would interfere with the player, but the attempt was unsuccessful due to costs and excessive resource usage. For the next iteration, I plan to implement enemies with predefined rules and behaviors.
 """
 tech = "C#, Unity"
 image = "images/projects/space-janitors.png"
@@ -110,19 +110,19 @@ project_type = "Team project"
 
 # Fill in the fields below. Empty sections are hidden on the site.
 my_role = """
-I use Unity and C#, which I’ve been learning for game development, to create shop environments, including market stalls, for our club’s dating simulation game. I also use AI models with PyTorch to generate questions and answers for randomized customer quizzes.
+My responsibilities include creating stalls and their UI, implementing rice cake sales logic, managing customer AI, and handling upgrades.
 """
 challenges = """
-
+I used a free AI model developed in China, but it frequently generated quiz questions in Chinese, disrupting gameplay. To address this, I added a language check that regenerates the questions whenever the output is not in Korean.
 """
 goal = """
-
+Our goal is to complete the project and showcase it at events such as Unicorn and game festivals, and eventually release the game.
 """
 approach = """
-
+I chose an AI model to generate a wider variety of quiz questions, as I felt that repeating the same questions could make the game boring. The AI generated questions ranging from interesting to very challenging, which made it a worthwhile choice.
 """
 limitations = """
-
+Our team currently has no dedicated artist, so the UI still needs visual polish. To improve it, I am considering either using a paid AI tool or learning to create the art myself.
 """
 tech = "C#, Unity"
 image = "images/projects/dduck.png"
@@ -231,19 +231,19 @@ project_type = "개인 프로젝트"
 
 # 아래 내용을 따옴표 사이에 작성하세요. 빈 항목은 사이트에서 숨겨집니다.
 my_role = """
-C#과 Unity를 사용한 개인 게임 개발.
+총괄
 """
 challenges = """
-
+우주를 떠다니는 물리엔진을 구현하기가 어려웠다. 이동 속도와 관성 값을 조정하고 반복적으로 플레이하며, 최대한 원하는 움직임에 가까워 지도록 개선하였고, 움직임을 위해 계속 개선중입니다.
 """
 goal = """
-현재 개발 중인 우주선 청소게임을 완성하여 배포하는 것이 목표입니다.
+이 게임을 완성 시켜 스팀같은 게임 파는 곳에 배포를 하는 것이 목표이다.
 """
 approach = """
-
+배우고 있던 Unity와 C#을 활용해 하나의 게임을 완성하고 싶어서 선택했습니다. 이동·청소·전투 같은 핵심 기능을 단계적으로 구현하며, 서로 자연스럽게 연결되는지 테스트하고 있습니다.
 """
 limitations = """
-
+적에게 ai를 씌우고 유저를 방해하는 적을 만들고 싶었다. 하지만 비용 문제 및 과도한 성능을 잡아먹어서 실패하였다. 다음엔 ai가 아닌 타 게임 처럼 로직대로 움직이는 수동적인 적을 만들어야 겠다.
 """
 tech = "C#, Unity"
 image = "images/projects/space-janitors.png"
@@ -261,19 +261,19 @@ project_type = "팀 프로젝트"
 
 # 아래 내용을 따옴표 사이에 작성하세요. 빈 항목은 사이트에서 숨겨집니다.
 my_role = """
-게임 개발을 위해 공부한 Unity, c# 등을 이용해 동아리의 단체 프로젝트인 연애 시뮬레이션 게임에서 Unity로 가판대 등 가게 환경을 제작하고 있습니다. 또한 손님들의 랜덤한 퀴즈를 위해 Pytorch를 활용해 손님들의 답변, 질문들을 ai를 이용해 만들고 있습니다.
+가판대 ui,가판대 제조, 떡 판매 알고리즘, 손님 ai 관리, 업그레이드 관리 등
 """
 challenges = """
-
+중국산 무료 ai를 가져와 사용을 하였다. 그로 인해 가끔씩 질문을 중국어로 하여 플레이에 지장이 겪는 경우가 잦았다. 이를 위해 한국어가 아닌 다른 언어가 나올시 다시 뽑기를 반복하도록 만들었다.
 """
 goal = """
-
+이 프로젝트를 완성을 하여 유니콘 및 게임 페스티벌 같은 곳에 홍보가 목표이며 ,더 나아가 배포도 할 것이다.
 """
 approach = """
-
+다양한 퀴즈 질문을 생성하기 위해 AI 모델을 선택했습니다. 같은 퀴즈가 반복적으로 나올시 플레이에 지루함이 느껴질 수 있다고 판단되었고 AI를 적용시킨 결과 흥미로운 퀴즈부터 엄청 어려운 퀴즈까지 나와 좋은 선택이였던거 같다.
 """
 limitations = """
-
+아트를 담당하는 회원이 존재하지 않아 조잡한 ui를 가지고 있다. 이를 개선하기 위해 비싼 ai를 사용을 하던가 혹은 직접 배워서 아트를 해야할 것 같다.
 """
 tech = "C#, Unity"
 image = "images/projects/dduck.png"
