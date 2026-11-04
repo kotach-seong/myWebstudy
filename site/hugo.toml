@@ -160,7 +160,7 @@ description = "I use Unity and C#, which I’ve been learning for game developme
 
 [[menu.main]]
 identifier = "volunteering"
-name = "Volunteering"
+name = "Club Activities"
 url = "#volunteering"
 weight = 3
 
