@@ -35,6 +35,11 @@ institution = "who kathon"
 title = "who hackathon"
 date = "November 2025"
 
+[[params.honors]]
+institution = "Fin nect ideathon"
+title = "Fin nect ideathon"
+date = "June 2026"
+
 [[params.certifications]]
 title = "Craftsman Information Processing"
 date = "Dec 2023"
@@ -209,6 +214,11 @@ date = "2026년 3월"
 institution = "후 커톤"
 title = "Who 해커톤"
 date = "2025년 11월"
+
+[[languages.ko.params.honors]]
+institution = "핀 넥트 아이디어톤"
+title = "핀 넥트 아이디어톤"
+date = "2026년 6월"
 
 [[languages.ko.params.certifications]]
 title = "정보처리기능사"
