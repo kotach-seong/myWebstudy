@@ -19,18 +19,35 @@
 
 <style>
     .footer-to-top {
+        position: fixed;
+        right: max(1.25rem, env(safe-area-inset-right));
+        bottom: max(1.25rem, env(safe-area-inset-bottom));
+        z-index: 40;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: 44px;
-        height: 44px;
-        color: inherit;
-        opacity: .65;
-        border-radius: 4px;
+        width: 48px;
+        height: 48px;
+        color: #374151;
+        background: rgba(255, 255, 255, .65);
+        border: 1px solid rgba(17, 24, 39, .18);
+        border-radius: 50%;
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, .16);
         text-decoration: none;
+        touch-action: manipulation;
+        transition: background-color .15s, border-color .15s;
     }
-    .footer-to-top:hover { opacity: 1; }
-    .footer-to-top:focus-visible { outline: 2px solid #38bdf8; outline-offset: 3px; opacity: 1; }
+    .dark .footer-to-top {
+        color: #f3f4f6;
+        background: rgba(45, 45, 45, .65);
+        border-color: rgba(255, 255, 255, .28);
+    }
+    .footer-to-top:hover { background: rgba(255, 255, 255, .85); }
+    .dark .footer-to-top:hover { background: rgba(65, 65, 65, .85); }
+    .footer-to-top:focus-visible { outline: 2px solid #38bdf8; outline-offset: 3px; }
+    @media (prefers-reduced-motion: reduce) { .footer-to-top { transition: none; } }
 
     .animated-link {
         position: relative;
