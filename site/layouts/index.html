@@ -11,6 +11,7 @@
     <section id="about" class="mb-16">
         <div class="max-w-3xl ml-0 p-4 pb-2 border border-border-primary-light dark:border-border-primary-dark rounded-lg bg-bg-primary-light dark:bg-bg-secondary-dark shadow-lg relative">
             <div class="text-left">
+                {{ partial "profile-avatar.html" . }}
                 <h1 class="text-4xl font-bold mb-2 text-text-primary-light dark:text-text-primary-dark">{{ .name }}</h1>
                 <p class="text-gray-400 mb-3 flex items-center text-xl">
                     <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400" width="24" height="24" viewBox="-7 -2 24 24"><path fill="currentColor" d="M4 9.9A5.002 5.002 0 0 1 5 0a5 5 0 0 1 1 9.9V19a1 1 0 0 1-2 0V9.9zM5 8a3 3 0 1 0 0-6a3 3 0 0 0 0 6z"/></svg>

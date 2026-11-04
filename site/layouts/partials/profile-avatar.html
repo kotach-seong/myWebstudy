@@ -1,0 +1,26 @@
+{{ $avatar := .avatar | default site.Params.avatar }}
+{{ with $avatar }}
+<div class="profile-avatar">
+    <img src="{{ . | relURL }}" alt="{{ $.name }}" width="616" height="597" decoding="async">
+</div>
+<style>
+    .profile-avatar {
+        width: 144px;
+        height: 144px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        margin: 4px 0 22px;
+        border: 2px solid rgba(17, 24, 39, .18);
+    }
+    .dark .profile-avatar { border-color: rgba(255, 255, 255, .18); }
+    .profile-avatar img {
+        position: absolute;
+        width: 120%;
+        max-width: none;
+        height: auto;
+        left: -10%;
+        top: 0;
+    }
+</style>
+{{ end }}
