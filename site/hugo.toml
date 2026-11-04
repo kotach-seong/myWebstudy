@@ -79,7 +79,7 @@ link = "https://github.com/JUNUKJUNUKJUNUKJUNUKJUNUK/DDUKDDUK"
 
 [[params.blogs]]
 title = "Interests"
-summary = "I’m interested in game engines and exploring how AI can be used in game development."
+summary = "I’m interested in game development because it allows me to bring my ideas to life. Seeing how AI is being used to make games more fun and engaging has also inspired me to learn more about AI."
 
 [[params.blogs]]
 title = "Currently Learning"
@@ -184,7 +184,7 @@ link = "https://github.com/JUNUKJUNUKJUNUKJUNUKJUNUK/DDUKDDUK"
 
 [[languages.ko.params.blogs]]
 title = "관심 분야"
-summary = "AI를 게임 제작에 활용하는 방법과 게임 엔진에 관심이 있습니다."
+summary = "내 아이디어를 실현할 수 있어서 게임 개발에 관심이 있습니다. AI를 활용해 게임을 더 재미있고 흥미롭게 만드는 모습을 보며 AI도 더 배우고 싶어졌습니다"
 
 [[languages.ko.params.blogs]]
 title = "현재 배우는 것"
@@ -206,7 +206,7 @@ title = "멋쟁이사자처럼 해커톤"
 date = "2026년 3월"
 
 [[languages.ko.params.honors]]
-institution = "who kathon"
+institution = "후 커톤"
 title = "Who 해커톤"
 date = "2025년 11월"
 
