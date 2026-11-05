@@ -15,7 +15,7 @@ canonifyURLs = true
 
 [params]
 name = "Oh Seong Jun"
-avatar = "images/profile/avatar.png"
+avatar = "images/profile/avatar.jpg"
 location = "NamWon, Republic of Korea"
 description = "AI Developer. Game Developer. student at JBNU. "
 discord = "https://discord.com/users/425610371508731914"

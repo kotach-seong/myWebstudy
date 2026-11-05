@@ -1,7 +1,16 @@
 {{ $avatar := .avatar | default site.Params.avatar }}
 {{ with $avatar }}
+{{ $src := . | relURL }}
+{{ $width := 144 }}
+{{ $height := 144 }}
+{{ with resources.Get . }}
+    {{ $image := .Resize "768x q85" }}
+    {{ $src = $image.RelPermalink }}
+    {{ $width = $image.Width }}
+    {{ $height = $image.Height }}
+{{ end }}
 <div class="profile-avatar">
-    <img src="{{ . | relURL }}" alt="{{ $.name }}" width="616" height="597" decoding="async">
+    <img src="{{ $src }}" alt="{{ $.name }}" width="{{ $width }}" height="{{ $height }}" decoding="async">
 </div>
 <style>
     .profile-avatar {
@@ -16,11 +25,12 @@
     .dark .profile-avatar { border-color: rgba(255, 255, 255, .18); }
     .profile-avatar img {
         position: absolute;
-        width: 120%;
-        max-width: none;
-        height: auto;
-        left: -10%;
-        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 70% 80%;
+        transform: scale(1.85);
+        transform-origin: 70% 80%;
     }
 </style>
 {{ end }}
