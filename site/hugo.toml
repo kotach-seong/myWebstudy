@@ -59,9 +59,9 @@ period = "March 2026 - present"
 description = "A game where you clean up dungeons after adventurers have passed through, collect treasure, defeat remaining enemies, and grow stronger along the way."
 
 [[params.experience]]
-role = "DDuck dating sim"
-period = "October 2026 - present"
-description = "A game where you run a rice cake shop, earn money, and use your earnings to go on dates with female characters."
+role = "2D Vampire Survivors-style Game"
+period = "May 2026"
+description = "A game where you defeat enemies, level up, and keep growing stronger."
 
 [[params.experience]]
 role = "Space Janitors"
@@ -174,11 +174,6 @@ weight = 3
     name = "Interests & Goals"
     url = "#interests-goals"
     weight = 5
-  [[menu.main]]
-    identifier = "game"
-    name = "Game"
-    url = "game/"
-    weight = 6
 
 # Language-specific text. Shared links and technology names remain in [params].
 [languages.en]
@@ -210,9 +205,9 @@ period = "2026년 3월 ~ 현재"
 description = "모험가들이 지나간 던전을 청소하며 보물을 모으고, 남아 있는 적을 물리치면서 점점 강해지는 게임입니다."
 
 [[languages.ko.params.experience]]
-role = "DDUCK 연애 시뮬레이션"
-period = "2026년 10월 ~ 현재"
-description = "떡집을 운영하며 돈을 벌고, 번 돈으로 여성 캐릭터들과 데이트를 하는 게임입니다."
+role = "2D 뱀서류 게임"
+period = "2026년 5월"
+description = "적을 죽이며 레벨업을 하고 계속 강해지는 게임"
 
 [[languages.ko.params.experience]]
 role = "Space Janitors"
@@ -349,9 +344,3 @@ identifier = "interests-goals"
 name = "관심 분야와 목표"
 url = "#interests-goals"
 weight = 5
-
-[[languages.ko.menus.main]]
-identifier = "game"
-name = "게임"
-url = "game/"
-weight = 6
