@@ -4,3 +4,4 @@ Creation: Original SVG drawn as code with assistance from Codex for this portfol
 External artwork: None used for this favicon.
 Source: gamepad.svg
 Derivatives: PNG sizes and ICO were rendered from the same SVG.
+Raster export: transparent background outside the rounded-square icon.
