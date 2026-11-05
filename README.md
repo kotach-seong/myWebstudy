@@ -1,11 +1,11 @@
 # Oh Seong Jun | Learning & Creating
 
-오성준의 한국어·영어 포트폴리오입니다. 개발 경험, 동아리 활동, 수상·자격증과 게임 프로젝트 Space Janitors, DDUCK을 소개합니다.
+오성준의 초급프로젝트 중간 과제입니다.
+주제는 저의 경험, 동아리 활동, 프로젝트, 자격증, 상, 흥미부터 미래의 목표를 적어놓은 홈페이지 입니다.
 
-- [공개 사이트 (영어)](https://kotach-seong.github.io/myWebstudy/)
-- [공개 사이트 (한국어)](https://kotach-seong.github.io/myWebstudy/ko/)
+- [공개 사이트](https://kotach-seong.github.io/myWebstudy/)
 
-## 필요한 도구와 설치 (Windows x64)
+## 필요한 도구와 설치
 
 저장소를 복제하고 배포용 HTML을 빌드하려면 **Git**, **Hugo Extended 0.167.0**, **Python 3.12**가 필요합니다. Git 2.55.0, Hugo Extended 0.167.0, Python 3.12.10으로 확인했습니다. 테마와 빌드된 Tailwind CSS는 저장소에 포함돼 있습니다. [스타일시트](site/themes/template/static/css/tailwind.css)
 
