@@ -59,11 +59,11 @@
         <h2 class="text-4xl font-bold mb-5">{{ T "experienceTitle" }}</h2>
         <div class="space-y-4 max-w-3xl mx-auto">
             {{ range $index, $exp := . }}
-            <div class="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-0 before:w-[2px] before:h-full before:bg-gray-700 before:rounded-full">
+            <div class="timeline-entry relative pl-8 before:content-[''] before:absolute before:left-0 before:top-0 before:w-[2px] before:h-full before:bg-gray-700 before:rounded-full">
                 {{ if eq .company "Open Source Contributor" }}
-                <div class="absolute -left-1.5 top-0 w-3 h-3 bg-[#121212] border border-blue-400 rounded-full"></div>
+                <div class="timeline-entry__marker absolute -left-1.5 top-0 w-3 h-3 bg-[#121212] border border-blue-400 rounded-full"></div>
                 {{ else }}
-                <div class="absolute -left-1.5 top-0 w-2 h-2 bg-gray-700 rounded-full"></div>
+                <div class="timeline-entry__marker absolute -left-1.5 top-0 w-2 h-2 bg-gray-700 rounded-full"></div>
                 {{ end }}
                 <div class="text-gray-400 text-xl mb-1">
                     {{ if .company_link }}
@@ -243,6 +243,17 @@
 </div>
 
 <style>
+.timeline-entry { --timeline-accent: #0284c7; }
+.dark .timeline-entry { --timeline-accent: #0ea5e9; }
+.timeline-entry::before,
+.timeline-entry__marker {
+    transition: background-color 300ms, border-color 300ms;
+}
+.timeline-entry:is(:hover, :focus-within)::before,
+.timeline-entry:is(:hover, :focus-within) .timeline-entry__marker {
+    background-color: var(--timeline-accent);
+    border-color: var(--timeline-accent);
+}
 .tech-carousel {
     width: 100%;
     overflow: hidden;
