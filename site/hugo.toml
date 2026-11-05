@@ -53,11 +53,6 @@ title = "Craftsman Inert Gas Arc Welding"
 date = "August 2022"
 
 [[params.experience]]
-role = "Mobile 2-player minigame showdown"
-period = "April 2026 - June 2026"
-description = "A two-player competitive game where players compete in various mini-games to earn points. The player with the highest total score wins."
-
-[[params.experience]]
 role = "MAKGAN"
 period = "March 2026 - March 2026"
 description = "Developed an app that shows wait times at nearby restaurants, hospitals, and other facilities to help users reduce waiting time."
@@ -66,6 +61,12 @@ description = "Developed an app that shows wait times at nearby restaurants, hos
 role = "2D Dungeon cleaner"
 period = "March 2026 - present"
 description = "A game where you clean up dungeons after adventurers have passed through, collect treasure, defeat remaining enemies, and grow stronger along the way."
+
+[[params.experience]]
+role = "Mobile 2-player minigame showdown"
+period = "April 2026 - June 2026"
+description = "A two-player competitive game where players compete in various mini-games to earn points. The player with the highest total score wins."
+
 
 [[params.experience]]
 role = "2D Vampire Survivors-style Game"
@@ -204,11 +205,6 @@ location = "대한민국 남원"
 description = "AI와 게임 개발을 공부하는 전북대학교 학생입니다."
 
 [[languages.ko.params.experience]]
-role = "2인용 미니게임 대결 모바일게임"
-period = "2026년 4월 ~ 2026년 6월"
-description = "두 명의 플레이어가 다양한 미니게임에서 경쟁하며 점수를 휙득하고, 최종적으로 더 높은 점수를 얻은 플레이어가 승리하는 2인용 대결 게임입니다."
-
-[[languages.ko.params.experience]]
 role = "MAKGAN"
 period = "2026년 3월"
 description = "주변 음식점, 병원 등의 대기시간을 알려주어 사용자의 대기시간을 줄이는 앱을 개발했습니다."
@@ -217,6 +213,12 @@ description = "주변 음식점, 병원 등의 대기시간을 알려주어 사�
 role = "2D 던전 청소부"
 period = "2026년 3월 ~ 현재"
 description = "모험가들이 지나간 던전을 청소하며 보물을 모으고, 남아 있는 적을 물리치면서 점점 강해지는 게임입니다."
+
+[[languages.ko.params.experience]]
+role = "2인용 미니게임 대결 모바일게임"
+period = "2026년 4월 ~ 2026년 6월"
+description = "두 명의 플레이어가 다양한 미니게임에서 경쟁하며 점수를 휙득하고, 최종적으로 더 높은 점수를 얻은 플레이어가 승리하는 2인용 대결 게임입니다."
+
 
 [[languages.ko.params.experience]]
 role = "2D 뱀서류 게임"
