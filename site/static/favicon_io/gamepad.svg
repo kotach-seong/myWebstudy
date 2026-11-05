@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <title>Gamepad favicon</title>
+  <rect width="128" height="128" rx="28" fill="#181818"/>
+  <path d="M40 39h48c14 0 21 11 24 28l4 23c1 8-6 13-12 8L87 84H41L24 98c-6 5-13 0-12-8l4-23c3-17 10-28 24-28Z" fill="#f5f5f5"/>
+  <path d="M35 51h9v10h10v9H44v10h-9V70H25v-9h10Z" fill="#181818"/>
+  <circle cx="87" cy="57" r="6" fill="#181818"/>
+  <circle cx="101" cy="70" r="6" fill="#181818"/>
+  <rect x="58" y="74" width="12" height="5" rx="2.5" fill="#181818"/>
+</svg>

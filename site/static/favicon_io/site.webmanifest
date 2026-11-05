@@ -1,0 +1,23 @@
+{
+  "name": "Oh Seong Jun | Learning & Creating",
+  "short_name": "Seong Jun",
+  "start_url": "../",
+  "scope": "../",
+  "display": "browser",
+  "background_color": "#181818",
+  "theme_color": "#181818",
+  "icons": [
+    {
+      "src": "gamepad-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "gamepad-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

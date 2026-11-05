@@ -1,0 +1,6 @@
+Gamepad favicon and derived icons
+
+Creation: Original SVG drawn as code with assistance from Codex for this portfolio.
+External artwork: None used for this favicon.
+Source: gamepad.svg
+Derivatives: PNG sizes and ICO were rendered from the same SVG.
