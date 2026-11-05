@@ -48,6 +48,10 @@ date = "Dec 2023"
 title = "Craftsman Automobile Repair Painting"
 date = "March 2022"
 
+[[params.certifications]]
+title = "Craftsman Inert Gas Arc Welding"
+date = "August 2022"
+
 [[params.experience]]
 role = "MAKGAN"
 period = "March 2026 - March 2026"
@@ -314,6 +318,10 @@ date = "2023년 12월"
 [[languages.ko.params.certifications]]
 title = "자동차보수도장기능사"
 date = "2022년 3월"
+
+[[languages.ko.params.certifications]]
+title = "특수용접기능사"
+date = "2022년 8월"
 
 [[languages.ko.menus.main]]
 identifier = "about"
