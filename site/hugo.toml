@@ -26,6 +26,11 @@ steam = "https://steamcommunity.com/profiles/76561199021434695/"
 steam_username = "Hubert"
 
 [[params.honors]]
+institution = "Fin nect ideathon"
+title = "Fin nect ideathon"
+date = "June 2026"
+
+[[params.honors]]
 institution = "likelion bootcamp"
 title = "likelion hackathon"
 date = "March 2026"
@@ -34,11 +39,6 @@ date = "March 2026"
 institution = "who kathon"
 title = "who hackathon"
 date = "November 2025"
-
-[[params.honors]]
-institution = "Fin nect ideathon"
-title = "Fin nect ideathon"
-date = "June 2026"
 
 [[params.certifications]]
 title = "Craftsman Information Processing"
