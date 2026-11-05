@@ -115,3 +115,9 @@ other = "Email"
 
 [footerBuiltWith]
 other = "Built with"
+
+[openMenu]
+other = "Open menu"
+
+[closeMenu]
+other = "Close menu"

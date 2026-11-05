@@ -5,6 +5,7 @@
     <style>
         html { scroll-behavior: smooth; }
         main section[id], #contact { scroll-margin-top: 2rem; }
+        #mobile-menu-button:focus-visible, #mobile-menu-close:focus-visible { outline: 2px solid #38bdf8; outline-offset: 4px; border-radius: 4px; }
         @media (prefers-reduced-motion: reduce) {
             html { scroll-behavior: auto; }
         }
@@ -65,7 +66,7 @@
                 </a>
                 {{ end }}
                 <!-- Hamburger menu button for mobile -->
-                <button id="mobile-menu-button" class="md:hidden text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark focus:outline-none">
+                <button id="mobile-menu-button" type="button" aria-label="{{ T "openMenu" }}" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
@@ -131,7 +132,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"/>
                       </svg>
                     </button>
-                    <button id="mobile-menu-close" class="text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300 focus:outline-none">
+                    <button id="mobile-menu-close" type="button" aria-label="{{ T "closeMenu" }}" class="text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
@@ -187,22 +188,45 @@
     const mobileMenu = document.getElementById('mobile-menu');
     const menuLinks = document.querySelectorAll('[data-menu-link]');
 
+    let mobileMenuPreviousOverflow = '';
+
     function openMobileMenu() {
+        if (!mobileMenu.classList.contains('hidden')) return;
+        mobileMenuPreviousOverflow = document.body.style.overflow;
         mobileMenu.classList.remove('hidden');
-        document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
+        mobileMenuButton.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+        mobileMenuClose.focus({ preventScroll: true });
     }
 
     function closeMobileMenu() {
+        if (mobileMenu.classList.contains('hidden')) return;
         mobileMenu.classList.add('hidden');
-        document.body.style.overflow = ''; // Restore scrolling
+        mobileMenuButton.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = mobileMenuPreviousOverflow;
+        const returnTarget = mobileMenuButton.getClientRects().length ? mobileMenuButton : document.querySelector('header a');
+        returnTarget?.focus({ preventScroll: true });
     }
 
     mobileMenuButton.addEventListener('click', openMobileMenu);
     mobileMenuClose.addEventListener('click', closeMobileMenu);
 
-    // Close menu when clicking on a link
     menuLinks.forEach(link => {
-        link.addEventListener('click', closeMobileMenu);
+        link.addEventListener('click', event => {
+            const destination = new URL(link.href);
+            const isSamePage = destination.origin === location.origin && destination.pathname === location.pathname;
+            const target = isSamePage ? document.getElementById(destination.hash.slice(1)) : null;
+            if (target) event.preventDefault();
+            closeMobileMenu();
+            if (!target) return;
+            if (location.hash !== destination.hash) history.pushState(null, '', destination.hash);
+            if (!target.hasAttribute('tabindex')) {
+                target.setAttribute('tabindex', '-1');
+                target.addEventListener('blur', () => target.removeAttribute('tabindex'), { once: true });
+            }
+            target.focus({ preventScroll: true });
+            target.scrollIntoView({ block: 'start' });
+        });
     });
 
     // Theme toggle functionality

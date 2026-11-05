@@ -114,3 +114,9 @@ other = "이메일"
 
 [footerBuiltWith]
 other = "제작 도구:"
+
+[openMenu]
+other = "메뉴 열기"
+
+[closeMenu]
+other = "메뉴 닫기"
