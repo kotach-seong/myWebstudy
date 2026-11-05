@@ -98,8 +98,8 @@
         <h2 class="text-4xl font-bold mb-5">{{ T "voluntaryTitle" }}</h2>
         <div class="space-y-4 max-w-3xl mx-auto">
             {{ range $index, $vol := . }}
-            <div class="relative pl-8 before:content-[''] before:absolute before:left-0 before:top-0 before:w-[2px] before:h-full before:bg-gray-700 before:rounded-full">
-                <div class="absolute -left-1.5 top-0 w-2 h-2 bg-gray-700 rounded-full"></div>
+            <div class="timeline-entry relative pl-8 before:content-[''] before:absolute before:left-0 before:top-0 before:w-[2px] before:h-full before:bg-gray-700 before:rounded-full">
+                <div class="timeline-entry__marker absolute -left-1.5 top-0 w-2 h-2 bg-gray-700 rounded-full"></div>
 
                 <div class="text-gray-400 text-xl mb-1">{{ .organization }}</div>
                 <h3 class="text-2xl font-semibold">{{ .role }}</h3>
