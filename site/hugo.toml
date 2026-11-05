@@ -45,12 +45,12 @@ title = "Craftsman Information Processing"
 date = "Dec 2023"
 
 [[params.certifications]]
-title = "Craftsman Inert Gas Arc Welding"
-date = "August 2022"
-
-[[params.certifications]]
 title = "Craftsman Automobile Repair Painting"
 date = "March 2022"
+
+[[params.certifications]]
+title = "Craftsman Inert Gas Arc Welding"
+date = "August 2022"
 
 [[params.certifications]]
 title = "Craftsman Fork Truck Operator"
