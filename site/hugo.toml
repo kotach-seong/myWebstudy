@@ -313,6 +313,11 @@ period = "2026년 ~ 현재"
 description = "게임 개발을 위해 공부한 Unity, c# 등을 이용해 동아리의 단체 프로젝트인 연애 시뮬레이션 게임에서 Unity로 가판대 등 가게 환경을 제작하고 있습니다. 또한 손님들의 랜덤한 퀴즈를 위해 Pytorch를 활용해 손님들의 답변, 질문들을 ai를 이용해 만들고 있습니다."
 
 [[languages.ko.params.honors]]
+institution = "핀 넥트 아이디어톤"
+title = "핀 넥트 아이디어톤"
+date = "2026년 6월"
+
+[[languages.ko.params.honors]]
 institution = "멋쟁이사자처럼 부트캠프"
 title = "멋쟁이사자처럼 해커톤"
 date = "2026년 3월"
@@ -322,10 +327,6 @@ institution = "후 커톤"
 title = "Who 해커톤"
 date = "2025년 11월"
 
-[[languages.ko.params.honors]]
-institution = "핀 넥트 아이디어톤"
-title = "핀 넥트 아이디어톤"
-date = "2026년 6월"
 
 [[languages.ko.params.certifications]]
 title = "정보처리기능사"
