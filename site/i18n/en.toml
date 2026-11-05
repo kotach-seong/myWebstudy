@@ -121,3 +121,18 @@ other = "Open menu"
 
 [closeMenu]
 other = "Close menu"
+
+[sendEmail]
+other = "Send email"
+
+[openGitHubProfile]
+other = "Open GitHub profile"
+
+[toggleTheme]
+other = "Toggle color theme"
+
+[switchToDarkTheme]
+other = "Switch to dark theme"
+
+[switchToLightTheme]
+other = "Switch to light theme"

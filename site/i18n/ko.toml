@@ -120,3 +120,18 @@ other = "메뉴 열기"
 
 [closeMenu]
 other = "메뉴 닫기"
+
+[sendEmail]
+other = "이메일 보내기"
+
+[openGitHubProfile]
+other = "GitHub 프로필 열기"
+
+[toggleTheme]
+other = "화면 테마 전환"
+
+[switchToDarkTheme]
+other = "어두운 테마로 전환"
+
+[switchToLightTheme]
+other = "밝은 테마로 전환"
