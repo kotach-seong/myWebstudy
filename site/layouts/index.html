@@ -77,7 +77,7 @@
                         {{ .company }}
                     {{ end }}
                 </div>
-                <p class="text-2xl font-semibold">{{ .role }}</p>
+                <h3 class="text-2xl font-semibold">{{ .role }}</h3>
                 <p class="text-gray-400 font-semibold">{{ .period }}</p>
                 <p class="text-gray-400 text-sm">{{ if .country }} {{ .country }}{{ end }}</p>
                 <p class="mt-2">{{ .description }}</p>
@@ -102,7 +102,7 @@
                 <div class="absolute -left-1.5 top-0 w-2 h-2 bg-gray-700 rounded-full"></div>
 
                 <div class="text-gray-400 text-xl mb-1">{{ .organization }}</div>
-                <p class="text-2xl font-semibold">{{ .role }}</p>
+                <h3 class="text-2xl font-semibold">{{ .role }}</h3>
                 <p class="text-gray-400 font-semibold">{{ .period }}</p>
                 <p class="mt-2">{{ .description }}</p>
             </div>
