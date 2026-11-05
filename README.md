@@ -47,6 +47,38 @@ hugo --source site --config hugo.toml,pages.json --baseURL http://127.0.0.1:1315
 
 빌드 결과는 저장소 최상위의 `public/`에 생성됩니다. 영어 페이지는 `public/index.html`, 한국어 페이지는 `public/ko/index.html`입니다. 배포 빌드는 [GitHub Actions 워크플로](.github/workflows/hugo-pages.yml)가 담당합니다. 워크플로는 Hugo Extended 0.167.0, Python 3.12, Node.js 24, Go 1.27.1, Dart Sass 1.105.0을 준비합니다.
 
+## 수정할 파일
+
+경로는 저장소 최상위 폴더 기준입니다.
+
+| 수정할 내용 | 파일 위치 |
+| --- | --- |
+| 소개, 연락처, 경험, 동아리 활동, 수상·자격증, 프로젝트 정보 | [site/hugo.toml](site/hugo.toml)의 `[params]`는 기본 및 영어 설정이고, `[languages.ko.params]`와 `[[languages.ko.params.*]]`는 한국어 설정입니다. |
+| 섹션 제목, 버튼 이름 등 한국어·영어 화면 문구 | [site/i18n/ko.toml](site/i18n/ko.toml), [site/i18n/en.toml](site/i18n/en.toml) |
+| 메인 페이지 섹션 순서와 레이아웃 | [site/layouts/index.html](site/layouts/index.html) |
+| 상단 메뉴, 언어·테마 전환, 하단 영역 | [site/layouts/partials/header.html](site/layouts/partials/header.html), [site/layouts/partials/footer.html](site/layouts/partials/footer.html) |
+| 기술 스택 목록과 표시 방식 | [site/data/workwith.json](site/data/workwith.json), [site/layouts/partials/work-with.html](site/layouts/partials/work-with.html) |
+| 프로필 사진과 프로젝트 스크린샷 | [site/assets/images/profile/avatar.jpg](site/assets/images/profile/avatar.jpg), [site/static/images/projects/](site/static/images/projects/) |
+
+## 변경 커밋과 공개 배포 확인
+
+1. 변경을 시작하기 전에 저장소 최상위 폴더에서 `git switch main`을 실행합니다. 파일을 저장하고 위의 로컬 미리보기로 영어와 한국어 화면을 확인합니다.
+2. `git status --short`와 `git diff`로 변경을 확인한 후 수정한 파일을 추가해 커밋하고 `main`에 푸시합니다. 아래는 `site/hugo.toml`을 수정한 경우의 예시입니다. 다른 파일을 수정했다면 `git add`에 그 경로를 적습니다.
+
+   ```powershell
+   git status --short
+   git diff
+   git add -- site/hugo.toml
+   git commit -m "Update portfolio content"
+   git rev-parse --short HEAD
+   git push origin main
+   ```
+
+3. `main` 푸시 후 [GitHub Actions의 Deploy Hugo to GitHub Pages 실행 목록](https://github.com/kotach-seong/myWebstudy/actions/workflows/hugo-pages.yml)에서 방금 확인한 커밋 해시와 일치하는 실행을 엽니다. `build`와 `deploy`가 모두 성공했는지 확인합니다. 실패했다면 해당 작업의 로그를 엽니다.
+4. 배포 성공 후 [공개 영어 화면](https://kotach-seong.github.io/myWebstudy/)과 [공개 한국어 화면](https://kotach-seong.github.io/myWebstudy/ko/)을 열어 수정한 섹션이 반영됐는지 확인합니다.
+
+배포 설정은 저장소의 [Settings → Pages](https://github.com/kotach-seong/myWebstudy/settings/pages)에서 관리합니다. **Build and deployment → Source**는 **GitHub Actions**입니다.
+
 ## 테마 출처
 
 Pranam Shetty의 [Hugo Noir](https://github.com/prxshetty/hugo-noir)를 바탕으로 제작했습니다. 테마 설명서는 [site/themes/template/README.md](site/themes/template/README.md), 라이선스는 [LICENSE](LICENSE)에 있습니다.
