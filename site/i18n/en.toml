@@ -103,3 +103,15 @@ other = "Limitations and future improvements"
 
 [projectDetailsButton]
 other = "Details"
+
+[footerTagline]
+other = "Learning & Creating"
+
+[footerLinks]
+other = "Footer links"
+
+[footerEmail]
+other = "Email"
+
+[footerBuiltWith]
+other = "Built with"

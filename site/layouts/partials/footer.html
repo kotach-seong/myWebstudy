@@ -1,23 +1,59 @@
-<!-- Footer -->
-<footer class="mt-32 text-center">
-    <div class="max-w-3xl mx-auto">
-        <div class="border-t border-border-primary-light dark:border-border-primary-dark pt-5">
-            <div class="flex flex-col items-center justify-center gap-2">
-                <a class="footer-to-top" href="#page-top" aria-label="{{ T "backToTop" }}" title="{{ T "backToTop" }}">
-                    <svg width="16" height="12" viewBox="0 0 16 12" fill="currentColor" aria-hidden="true"><path d="M8 0L16 12H0Z"/></svg>
-                </a>
-                {{ $authorData := index hugo.Data .Language.Lang "author" }}
-                {{ $author := cond (and $authorData $authorData.author) $authorData.author site.Params }}
-                {{ with $author }}
-                <p class="text-text-secondary-light dark:text-text-secondary-dark text-xm ">© {{ now.Format "2006" }} {{ .name }}</p>
-                <p class="text-text-secondary-light dark:text-text-secondary-dark text-xm pb-12">{{ T "builtUsing" }} <a href="https://gohugo.io/" target="_blank" class="animated-link text-accent-light dark:text-accent-dark hover:text-text-primary-light dark:hover:text-text-primary-dark">Hugo</a>. {{ T "takeALookAtMy" }} <a href="{{ .github }}" target="_blank" class="animated-link text-accent-light dark:text-accent-dark hover:text-text-primary-light dark:hover:text-text-primary-dark">GitHub</a></p>
-                {{ end }}
+{{ $authorData := index hugo.Data .Language.Lang "author" }}
+{{ $author := cond (and $authorData $authorData.author) $authorData.author site.Params }}
+<footer class="site-footer w-full md:w-4/5 lg:w-3/5 mx-auto px-14">
+    <div class="site-footer__inner">
+        {{ with $author }}
+        <div class="site-footer__top">
+            <div class="site-footer__identity">
+                <p class="site-footer__name">{{ .name }}</p>
+                <p class="site-footer__tagline">{{ T "footerTagline" }}</p>
             </div>
+            <nav class="site-footer__links" aria-label="{{ T "footerLinks" }}">
+                {{ with .email }}<a href="mailto:{{ . }}">{{ T "footerEmail" }}</a>{{ end }}
+                {{ with .github }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">GitHub</a>{{ end }}
+            </nav>
         </div>
+        <div class="site-footer__bottom">
+            <p>© {{ now.Format "2006" }} {{ .name }}</p>
+            <p class="site-footer__credits">
+                <span>{{ T "footerBuiltWith" }} <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a></span>
+                <span aria-hidden="true">·</span>
+                <span><a href="https://github.com/prxshetty/hugo-noir" target="_blank" rel="noopener noreferrer">Hugo Noir</a> by <a href="https://github.com/prxshetty" target="_blank" rel="noopener noreferrer">Pranam Shetty</a></span>
+            </p>
+        </div>
+        {{ end }}
     </div>
+    <a class="footer-to-top" href="#page-top" aria-label="{{ T "backToTop" }}" title="{{ T "backToTop" }}">
+        <svg width="16" height="12" viewBox="0 0 16 12" fill="currentColor" aria-hidden="true"><path d="M8 0L16 12H0Z"/></svg>
+    </a>
 </footer>
-
 <style>
+    .site-footer {
+        --footer-primary: #111827;
+        --footer-secondary: #6b7280;
+        --footer-border: #d1d5db;
+        margin-top: 32px;
+        padding-bottom: 40px;
+        color: var(--footer-secondary);
+    }
+    .dark .site-footer { --footer-primary: #f3f4f6; --footer-secondary: #a3a3a3; --footer-border: #404040; }
+    .site-footer__inner { max-width: 768px; margin-inline: auto; }
+    .site-footer__top { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .site-footer__name { color: var(--footer-primary); font-size: 20px; font-weight: 600; line-height: 1.4; }
+    .site-footer__tagline { font-size: 14px; line-height: 1.6; margin-top: 6px; }
+    .site-footer__links { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; font-size: 14px; }
+    .site-footer__links a { display: inline-flex; align-items: center; min-height: 44px; }
+    .site-footer a:not(.footer-to-top) { color: inherit; text-decoration: none; transition: color .15s; }
+    .site-footer a:not(.footer-to-top):hover { color: var(--footer-primary); text-decoration: underline; text-underline-offset: 4px; }
+    .site-footer a:not(.footer-to-top):focus-visible { outline: 2px solid #38bdf8; outline-offset: 4px; border-radius: 3px; }
+    .site-footer__bottom { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 10px 24px; border-top: 1px solid var(--footer-border); margin-top: 24px; padding-top: 16px; font-size: 12px; line-height: 1.8; }
+    .site-footer__credits { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 6px; }
+    @media (max-width: 767px) {
+        .site-footer { margin-top: 24px; padding-bottom: 88px; }
+        .site-footer__top { flex-direction: column; align-items: flex-start; gap: 12px; }
+        .site-footer__bottom { flex-direction: column; align-items: flex-start; gap: 8px; margin-top: 16px; }
+    }
+    @media (prefers-reduced-motion: reduce) { .site-footer a:not(.footer-to-top) { transition: none; } }
     .footer-to-top {
         position: fixed;
         right: max(1.25rem, env(safe-area-inset-right));
@@ -49,27 +85,4 @@
     .footer-to-top:focus-visible { outline: 2px solid #38bdf8; outline-offset: 3px; }
     @media (prefers-reduced-motion: reduce) { .footer-to-top { transition: none; } }
 
-    .animated-link {
-        position: relative;
-        display: inline-flex;
-        align-items: center;
-    }
-
-    .animated-link::after {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 1px;
-        bottom: -1px;
-        left: 0;
-        background-color: #0284c7; /* accent-light (sky-600) */
-        transition: width 0.3s ease-in-out;
-    }
-
-    .animated-link:hover::after {
-        width: 100%;
-    }
-    html.dark .animated-link::after {
-        background-color: #0ea5e9; /* accent-dark (sky-500) */
-    }
 </style>

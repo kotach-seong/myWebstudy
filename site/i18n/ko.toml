@@ -102,3 +102,15 @@ other = "한계와 개선 방향"
 
 [projectDetailsButton]
 other = "상세 설명"
+
+[footerTagline]
+other = "배우고 만들어갑니다."
+
+[footerLinks]
+other = "푸터 링크"
+
+[footerEmail]
+other = "이메일"
+
+[footerBuiltWith]
+other = "제작 도구:"

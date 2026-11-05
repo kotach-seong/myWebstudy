@@ -223,7 +223,7 @@
     {{ $blogs := cond (and $blogsData $blogsData.blogs) $blogsData.blogs site.Params.blogs }}
 
     {{ with $blogs }}
-    <section id="interests-goals" class="mt-20 mb-20">
+    <section id="interests-goals" class="mt-20">
         <div class="flex justify-between items-center mb-8">
             <h2 class="text-4xl font-bold">{{ T "interestsGoalsTitle" }}</h2>
         </div>
