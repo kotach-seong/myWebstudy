@@ -75,6 +75,10 @@ python .github/pages_build.py --build
 
 배포 설정은 저장소의 [Settings → Pages](https://github.com/kotach-seong/myWebstudy/settings/pages)에서 관리합니다. **Build and deployment → Source**는 **GitHub Actions**입니다.
 
-## 테마 출처
+## 자료 출처 및 제작 방식
 
-Pranam Shetty의 [Hugo Noir](https://github.com/prxshetty/hugo-noir)를 바탕으로 제작했습니다. 테마 설명서는 [site/themes/template/README.md](site/themes/template/README.md), 라이선스는 [LICENSE](LICENSE)에 있습니다.
+- **프로젝트 스크린샷 · 직접 캡처** — Space Janitors와 DDUCK의 소개 이미지는 오성준이 직접 캡처했습니다. [프로젝트 이미지](site/static/images/projects/)
+- **사이트 테마 · 외부 자료** — Pranam Shetty의 Hugo Noir를 바탕으로 제작했습니다. [원본 테마](https://github.com/prxshetty/hugo-noir) · [테마 설명서](site/themes/template/README.md) · [MIT 라이선스](LICENSE)
+- **기술 스택 및 Steam 아이콘 · 외부 자료** — 기술 스택 아이콘은 Devicon(MIT), Lobe Icons(MIT), Simple Icons(CC0)에서 가져왔습니다. Steam 아이콘도 Simple Icons에서 가져왔습니다. [아이콘별 출처](site/static/images/tech-stack/SOURCES.txt) · [라이선스 고지](site/static/images/tech-stack/LICENSES.txt) · [Steam 아이콘 출처](site/layouts/partials/steam-icon.html)
+- **게임패드 탭 아이콘 · AI 보조 제작** — Codex를 사용해 SVG를 작성하고, 같은 SVG에서 PNG와 ICO를 만들었습니다. [제작 기록](site/static/favicon_io/SOURCES.txt)
+- **Space Grotesk 폰트 · 외부 자료** — Google Fonts에서 불러오며 SIL Open Font License 1.1이 적용됩니다. [폰트](https://fonts.google.com/specimen/Space+Grotesk) · [라이선스 원문](https://github.com/google/fonts/blob/main/ofl/spacegrotesk/OFL.txt)
