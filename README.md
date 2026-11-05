@@ -7,10 +7,11 @@
 
 ## 필요한 도구와 설치 (Windows x64)
 
-로컬 미리보기와 빌드에는 **Git**과 **Hugo Extended 0.167.0**을 사용합니다. 아래 명령은 Git 2.55.0과 Hugo Extended 0.167.0으로 확인했습니다. 테마와 [빌드된 Tailwind CSS](site/themes/template/static/css/tailwind.css)는 저장소에 포함돼 있어 로컬 실행에는 이 두 도구만 필요합니다.
+저장소를 복제하고 배포용 HTML을 빌드하려면 **Git**, **Hugo Extended 0.167.0**, **Python 3.12**가 필요합니다. Git 2.55.0, Hugo Extended 0.167.0, Python 3.12.10으로 확인했습니다. 테마와 빌드된 Tailwind CSS는 저장소에 포함돼 있습니다. [스타일시트](site/themes/template/static/css/tailwind.css)
 
 1. [Git for Windows 설치 프로그램](https://git-scm.com/downloads/win)을 실행하고 PowerShell을 새로 엽니다.
-2. 아래 명령으로 Hugo의 Windows x64 ZIP을 내려받아 압축을 풀고 현재 PowerShell의 `PATH`에 추가합니다.
+2. Python 3.12 Windows 64비트 설치 프로그램을 실행합니다. `Add python.exe to PATH`를 선택해 설치하고 PowerShell을 새로 엽니다. [Python 3.12.10 다운로드](https://www.python.org/downloads/release/python-31210/)
+3. 아래 명령으로 Hugo의 Windows x64 ZIP을 내려받아 압축을 풀고 현재 PowerShell의 `PATH`에 추가합니다.
 
    ```powershell
    $hugoInstall = Join-Path $env:LOCALAPPDATA 'Programs\Hugo\0.167.0'
@@ -20,32 +21,27 @@
    $env:Path = "$hugoInstall;$env:Path"
    git --version
    hugo version
+   python --version
    ```
 
    `hugo version`에 `v0.167.0`과 `extended`가 표시되면 설치가 완료된 것입니다. 새 PowerShell에서는 `$hugoInstall`과 `$env:Path`를 설정하는 두 줄을 다시 실행합니다.
 
-3. 저장소를 복제한 뒤 저장소 최상위 폴더로 이동합니다. 아래의 실행·빌드 명령도 이 위치에서 실행합니다.
+4. 저장소를 복제한 뒤 저장소 최상위 폴더로 이동합니다. 빌드 명령도 이 위치에서 실행합니다.
 
    ```powershell
    git clone https://github.com/kotach-seong/myWebstudy.git
    cd myWebstudy
    ```
 
-## 로컬 미리보기와 빌드
+## 배포용 HTML 빌드
+
+저장소 최상위 폴더에서 GitHub Actions와 같은 빌드 스크립트를 실행합니다. 스크립트는 공개 주소를 기준으로 링크와 자산 경로를 맞춥니다. [빌드 스크립트](.github/pages_build.py)
 
 ```powershell
-hugo server --source site --config hugo.toml,pages.json --baseURL http://127.0.0.1:1315/ --bind 127.0.0.1 --port 1315 --renderToMemory
+python .github/pages_build.py --build
 ```
 
-브라우저에서 [영어 화면](http://127.0.0.1:1315/)과 [한국어 화면](http://127.0.0.1:1315/ko/)을 엽니다. 파일을 저장하면 개발 서버가 다시 빌드합니다. 서버는 `Ctrl+C`로 종료합니다. 포트가 사용 중이면 `--baseURL`과 `--port`에서 같은 번호로 바꿉니다.
-
-정적 파일만 빌드하려면 저장소 최상위 폴더에서 실행합니다.
-
-```powershell
-hugo --source site --config hugo.toml,pages.json --baseURL http://127.0.0.1:1315/ --destination ../public
-```
-
-빌드 결과는 저장소 최상위의 `public/`에 생성됩니다. 영어 페이지는 `public/index.html`, 한국어 페이지는 `public/ko/index.html`입니다. 배포 빌드는 [GitHub Actions 워크플로](.github/workflows/hugo-pages.yml)가 담당합니다. 워크플로는 Hugo Extended 0.167.0, Python 3.12, Node.js 24, Go 1.27.1, Dart Sass 1.105.0을 준비합니다.
+빌드 결과는 저장소 최상위의 `public/`에 생성됩니다. 영어 페이지는 `public/index.html`, 한국어 페이지는 `public/ko/index.html`입니다. Actions는 Hugo Extended 0.167.0, Python 3.12, Node.js 24, Go 1.27.1, Dart Sass 1.105.0을 준비합니다. [배포 워크플로](.github/workflows/hugo-pages.yml)
 
 ## 수정할 파일
 
@@ -62,7 +58,7 @@ hugo --source site --config hugo.toml,pages.json --baseURL http://127.0.0.1:1315
 
 ## 변경 커밋과 공개 배포 확인
 
-1. 변경을 시작하기 전에 저장소 최상위 폴더에서 `git switch main`을 실행합니다. 파일을 저장하고 위의 로컬 미리보기로 영어와 한국어 화면을 확인합니다.
+1. 변경을 시작하기 전에 저장소 최상위 폴더에서 `git switch main`을 실행합니다. 파일을 저장한 뒤 위의 빌드 명령으로 영어와 한국어 HTML이 생성되는지 확인합니다.
 2. `git status --short`와 `git diff`로 변경을 확인한 후 수정한 파일을 추가해 커밋하고 `main`에 푸시합니다. 아래는 `site/hugo.toml`을 수정한 경우의 예시입니다. 다른 파일을 수정했다면 `git add`에 그 경로를 적습니다.
 
    ```powershell
