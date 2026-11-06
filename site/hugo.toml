@@ -110,6 +110,7 @@ I wanted to create AI-driven enemies that would interfere with the player, but t
 """
 tech = "C#, Unity"
 image = "images/projects/space-janitors.png"
+image_alt = "First-person view of a long spaceship with a planet in the background"
 link = "https://github.com/kotach-seong/space-game"
 
 [[params.projects]]
@@ -140,6 +141,7 @@ Our team currently has no dedicated artist, so the UI still needs visual polish.
 """
 tech = "C#, Unity"
 image = "images/projects/dduck.png"
+image_alt = "Mugwort rice cake research screen showing a recipe, research cost, and selling price"
 link = "https://github.com/JUNUKJUNUKJUNUKJUNUKJUNUK/DDUKDDUK"
 
 [[params.blogs]]
@@ -262,6 +264,7 @@ limitations = """
 """
 tech = "C#, Unity"
 image = "images/projects/space-janitors.png"
+image_alt = "행성을 배경으로 길게 뻗은 우주선 외부를 바라보는 1인칭 게임 화면"
 link = "https://github.com/kotach-seong/space-game"
 
 [[languages.ko.params.projects]]
@@ -292,6 +295,7 @@ limitations = """
 """
 tech = "C#, Unity"
 image = "images/projects/dduck.png"
+image_alt = "쑥떡 레시피와 연구 비용, 판매가를 보여주는 게임 속 연구 화면"
 link = "https://github.com/JUNUKJUNUKJUNUKJUNUKJUNUK/DDUKDDUK"
 
 [[languages.ko.params.blogs]]
