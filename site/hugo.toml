@@ -209,7 +209,7 @@ location = "대한민국 남원"
 description = "AI와 게임 개발을 공부하는 전북대학교 학생입니다."
 
 [[languages.ko.params.experience]]
-role = "MAKGAN"
+role = "막간"
 period = "2026년 3월"
 description = "주변 음식점, 병원 등의 대기시간을 알려주어 사용자의 대기시간을 줄이는 앱을 개발했습니다."
 
