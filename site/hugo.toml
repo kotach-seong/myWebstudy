@@ -154,7 +154,7 @@ summary = "I’m learning C#, Unity, and Unreal Engine to develop my current pro
 
 [[params.blogs]]
 title = "Future Goals"
-summary = "My goal is to apply what I’ve learned to complete my projects. In particular, I want to finish and release the spaceship-cleaning game I’m currently developing."
+summary = "My goal is to apply what I have learned to finish and release my solo spaceship-cleaning game. First, I plan to adjust the inertia and movement speed of the spaceship in Unity, then play through the first cleaning section to see if the controls feel natural."
 
 [[params.voluntary]]
 role = "GPU GameProject"
