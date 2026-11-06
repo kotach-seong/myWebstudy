@@ -230,7 +230,7 @@ period = "2026년 5월 ~ 2026년 11월"
 description = "적을 죽이며 레벨업을 하며 능력을 강화하며 강해지는 게임"
 
 [[languages.ko.params.experience]]
-role = "Space Janitors"
+role = "우주선 청소부들"
 period = "2026년 4월 ~ 현재"
 description = "난파된 우주선을 청소하고 적을 처치하며 우주의 잔해를 정리하는 게임입니다."
 
