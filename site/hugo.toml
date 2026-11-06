@@ -265,7 +265,7 @@ image = "images/projects/space-janitors.png"
 link = "https://github.com/kotach-seong/space-game"
 
 [[languages.ko.params.projects]]
-title = "DDUCK 연애 시뮬레이션"
+title = "떡집 연애 시뮬레이션"
 description = "떡집을 운영하며 돈을 벌고, 번 돈으로 여성 캐릭터들과 데이트를 하는 게임입니다."
 details = """
 떡집을 운영하며 돈을 벌고, 번 돈으로 여성 캐릭터들과 데이트를 하는 게임입니다.
