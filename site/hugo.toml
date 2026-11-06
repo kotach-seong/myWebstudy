@@ -235,7 +235,7 @@ period = "2026년 4월 ~ 현재"
 description = "난파된 우주선을 청소하고 적을 처치하며 우주의 잔해를 정리하는 게임입니다."
 
 [[languages.ko.params.projects]]
-title = "Space Janitors"
+title = "우주선 청소부들"
 description = "난파된 우주선을 청소하고 적을 처치하며 우주의 잔해를 정리하는 게임입니다."
 details = """
 난파된 우주선을 청소하고 적을 처치하며 우주의 잔해를 정리하는 게임입니다.
